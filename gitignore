@@ -6,6 +6,10 @@ kafka/data/
 rabbitmq/data/
 ibmmq/data/
 
+# IBM MQ Redistributable Client (lokal installierte Fremdabhaengigkeit,
+# kein eigener Code, potenziell mehrere hundert MB)
+clients/
+
 # Python
 venv/
 __pycache__/
