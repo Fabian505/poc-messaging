@@ -1,0 +1,9 @@
+{"technology": "kafka", "run_id": "first_test", "instance_id": "1", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:50:29.669941+00:00"}
+{"technology": "kafka", "run_id": "first_test", "instance_id": "2", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:51:02.730645+00:00"}
+{"technology": "kafka", "run_id": "first_test", "instance_id": "3", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:51:20.824801+00:00"}
+{"technology": "kafka", "run_id": "first_test", "instance_id": "1", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:51:28.348760+00:00"}
+{"technology": "kafka", "run_id": "first_test", "instance_id": "2", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:51:31.029873+00:00"}
+{"technology": "kafka", "run_id": "first_test", "instance_id": "3", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:51:33.803857+00:00"}
+{"technology": "kafka", "run_id": "first_test", "instance_id": "2", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:51:56.648624+00:00"}
+{"technology": "kafka", "run_id": "first_test", "instance_id": "3", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:51:58.107516+00:00"}
+{"technology": "kafka", "run_id": "first_test", "instance_id": "1", "processed_count": 1000, "first_message_at": "2026-09-23T11:51:49.738829+00:00", "finished_at": "2026-09-23T11:51:59.800832+00:00"}

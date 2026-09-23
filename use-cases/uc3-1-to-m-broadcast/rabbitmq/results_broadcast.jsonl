@@ -1,0 +1,3 @@
+{"technology": "rabbitmq", "run_id": "first_test", "instance_id": "2", "processed_count": 1000, "first_message_at": "2026-09-23T11:53:32.277776+00:00", "finished_at": "2026-09-23T11:53:42.309206+00:00"}
+{"technology": "rabbitmq", "run_id": "first_test", "instance_id": "1", "processed_count": 1000, "first_message_at": "2026-09-23T11:53:32.278189+00:00", "finished_at": "2026-09-23T11:53:42.309251+00:00"}
+{"technology": "rabbitmq", "run_id": "first_test", "instance_id": "3", "processed_count": 1000, "first_message_at": "2026-09-23T11:53:32.277744+00:00", "finished_at": "2026-09-23T11:53:42.314881+00:00"}

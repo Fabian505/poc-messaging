@@ -1,0 +1,4 @@
+{"technology": "ibmmq", "run_id": "first_test", "instance_id": "1", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:48:27.324754+00:00"}
+{"technology": "ibmmq", "run_id": "first_test", "instance_id": "1", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:48:37.313495+00:00"}
+{"technology": "ibmmq", "run_id": "first_test", "instance_id": "2", "processed_count": 0, "first_message_at": null, "finished_at": "2026-09-23T11:48:48.553038+00:00"}
+{"technology": "ibmmq", "run_id": "first_test", "instance_id": "3", "processed_count": 1000, "first_message_at": "2026-09-23T11:48:54.503669+00:00", "finished_at": "2026-09-23T11:49:04.577679+00:00"}

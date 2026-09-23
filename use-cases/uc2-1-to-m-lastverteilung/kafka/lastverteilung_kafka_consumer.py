@@ -86,7 +86,7 @@ def main():
     with open(RESULTS_FILE, "a") as f:
         f.write(json.dumps({
             "technology": "kafka",
-            "group_id": group_id,
+            "run_id": group_id,
             "instance_id": instance_id,
             "processed_count": processed_count,
             "first_message_at": first_message_at.isoformat() if first_message_at else None,

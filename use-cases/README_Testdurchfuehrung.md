@@ -20,6 +20,8 @@ einfach nach komplex.
 - [ ] Störlasten schließen: Browser, Cloud-Sync, andere Container/VMs (siehe
       Methodik-Notiz zur Reproduzierbarkeit)
 
+source ~/Desktop/poc-messaging/clients/venv/bin/activate
+
 ### Topics/Queues einmalig anlegen
 
 | Name | Technologie | Partitionen/Typ | Für Use Case |

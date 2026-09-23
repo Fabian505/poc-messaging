@@ -60,7 +60,7 @@ def main():
 
     subscription = pymqi.Subscription(qmgr)
     subscription.sub(sub_desc=sub_desc)
-    managed_queue = subscription.get_queue()
+    managed_queue = subscription.sub_queue
 
     gmo = pymqi.GMO(
         Options=(
@@ -109,7 +109,6 @@ def main():
             "first_message_at": first_message_at.isoformat() if first_message_at else None,
             "finished_at": finished_at.isoformat(),
         }) + "\n")
-
 
 if __name__ == "__main__":
     main()
