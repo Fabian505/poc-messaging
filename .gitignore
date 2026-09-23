@@ -1,0 +1,22 @@
+# Broker-Laufzeitdaten (Bind-Mounts aus compose.yaml)
+# Diese Verzeichnisse gehoeren dem Container-internen UID-Mapping und sind
+# vom Host-Benutzer teils nicht lesbar (siehe Lessons Learned), ausserdem
+# ist es generierter Laufzeitzustand, kein Quellcode.
+kafka/data/
+rabbitmq/data/
+ibmmq/data/
+
+# IBM MQ Redistributable Client (lokal installierte Fremdabhaengigkeit,
+# kein eigener Code, potenziell mehrere hundert MB)
+clients/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Testergebnisse: bewusst NICHT generell ausgeschlossen, da diese Rohdaten
+# fuer Kapitel 6 relevant sein koennen. Falls die Dateien zu gross werden
+# oder ihr sie nicht versionieren wollt, hier gezielt eintragen, z.B.:
+# results_*.jsonl
+# contention_log*.csv
