@@ -1,0 +1,98 @@
+Rabbit delivery_mod 1 und 2 prüfen
+
+PoC-Scope und Use Cases
+
+Welche konkreten Anwendungen und Kommunikationsszenarien aus DPSC sollen im PoC exemplarisch abgebildet werden – reicht ein generisches Szenario (z.B. Ablösung des SQL-Server-Pollings) 
+oder braucht es einen Bezug zu einer realen Anwendung?
+
+Ist die Nennung konkreter Anwendungsnamen für die Arbeit überhaupt relevant/gewünscht, oder soll auf Abteilungs-/Systemebene abstrahiert werden?
+
+Priorität der drei möglichen Use Cases (SQL-Polling ablösen / Hot-Folder-Koordination ablösen / Large-File-Referenzierung) – welcher ist für den PoC am aussagekräftigsten?
+
+
+
+SysHub-Integration
+
+Ist eine SysHub-Anbindung im PoC überhaupt vorgesehen, oder bleibt der PoC unabhängig davon? -> Muss nicht mit Angebunden werden
+
+
+
+Anforderungen an die Messaging-Lösung
+
+Welche Zustellgarantie (at-most-once / at-least-once / exactly-once) ist für die relevanten DPSC-Szenarien tatsächlich erforderlich?
+
+Gibt es harte Anforderungen (Compliance, Datenschutz, SLA), die die Technologiewahl einschränken?
+
+Gibt es Restriktionen bezüglich Lizenzkosten oder eine Präferenz seitens DATEV (z.B. bestehende IBM-MQ-Lizenzen oder -Erfahrung)?
+
+
+
+Erfolgskriterien
+
+Anhand welcher Kriterien soll der PoC als erfolgreich bzw. aussagekräftig bewertet werden (z.B. Durchsatz unter Last, Ausfallverhalten, Integrationsaufwand)?
+
+Sind Metriken wie Queue-Tiefe/Consumer-Lag/Fehlerrate für DATEV bereits relevante Kennzahlen, oder wäre das neu?
+
+
+
+Diagramme / Validierung
+
+Sind die im Meeting festgehaltenen Ist- und Soll-Beschreibungen aus deiner Sicht vollständig und korrekt, bevor ich sie in draw.io-Diagramme überführe?
+
+Gibt es Aspekte der aktuellen Architektur, die im bisherigen Protokoll fehlen oder ungenau dargestellt sind?
+
+Bei welcher Technologie war podman besser als Docker und warum?
+
+Latenz-Messung
+
+ 
+
+
+MIt der KOnfiguration von Kafka schauen.
+
+Verzögerung nochmal genauer anschauen
+
+Liegt es vllt an einzelrechner (kein Großrechner/Verteiltes System)
+
+Größere Last bei der Latenzmessung. 10.000, 100.000, 1.000.000
+
+Größere Daten -> Kann Kafka nopch direkt etwas mit den Daten machen? -> Kafka kann Daten transformieren
+Welche Features hat Kafka mehr als IbmMQ und RabbitMQ
+
+Experiment zu erhalten von Nachrichten einmal usw.
+
+m:1
+1:m
+
+Nachrichtengrößen
+
+Kategorisierung der beteiligten Systeme in Gruppen — noch nicht erfolgt, wird für ein aussagekräftiges Architekturdiagramm in 3.1 benötigt.
+Konkrete zukünftige Rolle von SysHub — Ablösung bestehender Services versus Integration, laut deiner Aussage auch DATEV-intern noch nicht final entschieden.
+Priorisierung/Gewichtung der Anforderungen aus 3.3 — welche Kriterien im Zweifel Vorrang haben (z. B. Verfügbarkeit vor Betriebskomplexität), das bildet die Basis für die Evaluation in Kapitel 6.
+
+\subsection{Event-basierte Benachrichtigung}
+\todo{Szenario beschreiben: ein Ereignis, mehrere unabhaengige Consumer reagieren}
+\todo{Ziel: Publish-Subscribe-Muster demonstrieren}
+\todo{Besondere Relevanz fuer Kafka erlaeutern}
+
+Kapitel 3 (Ist-Soll)
+
+Kategorisierung der beteiligten Systeme in Gruppen — noch nicht erfolgt, wird für ein aussagekräftiges Architekturdiagramm benötigt
+Konkrete zukünftige Rolle von SysHub — Ablösung bestehender Services versus Integration
+Priorisierung/Gewichtung der Anforderungen aus 3.3 — welche Kriterien im Zweifel Vorrang haben, bildet Basis für Kapitel 6
+
+Kapitel 4 (Konzeption)
+4. Dynamischer Lastausgleich bei ungleicher Verarbeitungsgeschwindigkeit der Consumer-Instanzen — soll das als zusätzliches Erfolgskriterium beim Use Case "Lastverteilung" mitgeprüft werden?
+5. Producerseitiger Ausfall — soll das optional als Erweiterung von "Entkopplung bei Ausfall" aufgenommen werden? Deine eigene Vermutung dazu (Nachricht wird verworfen und muss vollständig neu gesendet werden) steht schon als vorläufige Annahme in der Datei, aber unbestätigt
+6. Herkunftsnachweis bei m:1 — muss der Consumer nachvollziehen können, welcher Producer eine Nachricht gesendet hat, oder ist das für den Use Case irrelevant?
+
+Use-Case-weise (UC1 bei allen drei Technologien, dann UC2, usw.): besser für den Leser, weil der direkte Vergleich zwischen den Technologien pro Szenario erleichtert wird, 
+und es lehnt sich eng an eure Gliederung aus Kapitel 4.2 an.
+
+Technologie-weise (erst alles zu Kafka, dann RabbitMQ, dann IBM MQ): günstiger, falls es pro Technologie viele gemeinsame Implementierungsdetails gibt, die sich sonst 
+über sechs Use Cases hinweg wiederholen würden, zum Beispiel bei IBM MQ die immer gleiche Verbindungsaufbau-Logik.
+
+Entscheidungsfrage für dich: welche der beiden Wiederholungsarten wäre für euch weniger schlimm, viele kurze Technologie-Wiederholungen pro Use Case, oder ein einmal 
+komplett durchgekautes Technologie-Kapitel mit sechs Use-Case-Unterabschnitten darin? Das ist im Kern eine Abwägung zwischen Lesbarkeit für den Vergleich und Redundanzvermeidung im Text.
+
+Idealerweise als Datenspeicher wird aber auch zur Kommunikation verwendet
