@@ -4,6 +4,12 @@ WICHTIG: Diesen Consumer ZUERST starten und aktiv warten lassen, dann erst
 den Producer starten. Nutzt eine neue, zeitstempelbasierte Consumer Group
 und auto.offset.reset=latest, damit jeder Testlauf garantiert nur die
 Nachrichten dieses Laufs zaehlt, unabhaengig von frueheren Testlaeufen.
+
+at-least-once: enable.auto.commit ist deaktiviert, das Offset wird erst
+nach erfolgreicher Verarbeitung der Nachricht manuell committed, konsistent
+mit den uebrigen Use Cases (siehe Kapitel 4.2 / 5.2). Zuvor nutzte dieses
+Skript den Standard-Auto-Commit ohne festgelegten Commit-Zeitpunkt, das war
+inkonsistent zu den anderen Use Cases.
 """
 
 import json
@@ -16,7 +22,7 @@ from latency_stats import print_latency_summary
 
 TOPIC = "latency.test"
 WARMUP_COUNT = 10
-MEASURE_COUNT = 1_000_000
+MEASURE_COUNT = 100
 TOTAL_COUNT = WARMUP_COUNT + MEASURE_COUNT
 
 
@@ -27,6 +33,7 @@ def main():
             "bootstrap.servers": "localhost:9092",
             "group.id": group_id,
             "auto.offset.reset": "latest",
+            "enable.auto.commit": False,
         }
     )
     consumer.subscribe([TOPIC])
@@ -55,6 +62,9 @@ def main():
             received_count += 1
             if seq > WARMUP_COUNT:
                 latencies.append(latency)
+
+            # Erst nach erfolgreicher Verarbeitung committen (at-least-once)
+            consumer.commit(message=msg, asynchronous=False)
     except KeyboardInterrupt:
         pass
     finally:

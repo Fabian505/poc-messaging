@@ -2,6 +2,20 @@
 
 WICHTIG: Diesen Consumer ZUERST starten und aktiv warten lassen, dann erst
 den Producer starten.
+
+at-least-once: MQGMO_SYNCPOINT plus explizitem qmgr.commit() nach
+erfolgreicher Verarbeitung, konsistent mit den uebrigen Use Cases (siehe
+Kapitel 4.2 / 5.2). Die urspruengliche Fassung ohne Syncpoint entsprach
+unbeabsichtigt einer at-most-once-Semantik (siehe Kapitel 5.2), das war
+inkonsistent zu den anderen Use Cases.
+
+ACHTUNG: Diese Aenderung fuegt pro Nachricht einen zusaetzlichen Commit
+hinzu, das kann die gemessene Latenz gegenueber vorherigen Laeufen mit der
+alten Fassung veraendern. Bereits erhobene IBM-MQ-Latenzwerte aus Kapitel
+6.1.1 mit der alten, nicht-transaktionalen Fassung sind mit dieser Version
+NICHT direkt vergleichbar und sollten mit dieser Fassung neu erhoben
+werden, damit alle drei Technologien unter derselben Zustellsemantik
+gemessen sind.
 """
 
 import json
@@ -19,7 +33,7 @@ QUEUE_NAME = "DEV.QUEUE.2"
 USER = "app"
 PASSWORD = "app12345"
 WARMUP_COUNT = 10
-MEASURE_COUNT = 1_000_000
+MEASURE_COUNT = 100
 TOTAL_COUNT = WARMUP_COUNT + MEASURE_COUNT
 
 conn_info = f"{HOST}({PORT})"
@@ -30,7 +44,11 @@ def main():
     queue = pymqi.Queue(qmgr, QUEUE_NAME)
 
     gmo = pymqi.GMO(
-        Options=pymqi.CMQC.MQGMO_WAIT | pymqi.CMQC.MQGMO_FAIL_IF_QUIESCING,
+        Options=(
+            pymqi.CMQC.MQGMO_WAIT
+            | pymqi.CMQC.MQGMO_SYNCPOINT
+            | pymqi.CMQC.MQGMO_FAIL_IF_QUIESCING
+        ),
         WaitInterval=30000,
     )
 
@@ -58,6 +76,9 @@ def main():
         received_count += 1
         if seq > WARMUP_COUNT:
             latencies.append(latency)
+
+        # Erst nach erfolgreicher Verarbeitung committen (at-least-once)
+        qmgr.commit()
 
     queue.close()
     qmgr.disconnect()

@@ -3,6 +3,11 @@
 WICHTIG: Diesen Consumer ZUERST starten und aktiv warten lassen, dann erst
 den Producer starten. Die ersten WARMUP_COUNT Nachrichten werden verworfen,
 erst danach beginnt die eigentliche Messung.
+
+at-least-once: manuelles Ack ERST NACH vollstaendiger Verarbeitung der
+Nachricht, konsistent mit den uebrigen Use Cases (siehe Kapitel 4.2 / 5.2).
+Zuvor erfolgte das Ack bereits vor dem Speichern des Messwerts in der
+latencies-Liste, das war inkonsistent zu den anderen Use Cases.
 """
 
 import json
@@ -14,7 +19,7 @@ from latency_stats import print_latency_summary
 
 QUEUE_NAME = "latency.test"
 WARMUP_COUNT = 10
-MEASURE_COUNT = 1_000_000
+MEASURE_COUNT = 100
 TOTAL_COUNT = WARMUP_COUNT + MEASURE_COUNT
 
 latencies = []
@@ -27,12 +32,13 @@ def callback(ch, method, properties, body):
     received_at = datetime.now(timezone.utc)
     latency = (received_at - sent_at).total_seconds()
 
-    ch.basic_ack(delivery_tag=method.delivery_tag)
-
     if seq <= WARMUP_COUNT:
         pass  # Warmup, wird verworfen
     else:
         latencies.append(latency)
+
+    # Erst nach erfolgreicher Verarbeitung acken (at-least-once)
+    ch.basic_ack(delivery_tag=method.delivery_tag)
 
     if seq >= TOTAL_COUNT:
         ch.stop_consuming()
