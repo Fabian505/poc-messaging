@@ -1,0 +1,22 @@
+Messumgebung, erfasst 2026-09-25T10:41:04+02:00
+
+Host:        fedora.fritz.box
+OS:          Fedora Linux 44 (Workstation Edition)
+Kernel:      7.2.6-200.fc44.x86_64
+CPU:         AMD Ryzen 7 9800X3D 8-Core Processor
+Threads:     16
+RAM gesamt:  30.5 GB
+Governor:    powersave 
+EPP:         balance_performance
+Energieprof: n/a
+Load (1min): 0.40
+Platte:      /dev/nvme0n1p6 btrfs
+
+Podman:      podman version 5.8.7
+  kafka: docker.io/apache/kafka:3.8.0
+  rabbitmq: docker.io/library/rabbitmq:3.13
+  ibmmq: icr.io/ibm-messaging/mq:latest
+
+Python venv: Python 3.14.7
+
+Pruefergebnis: 3 FAIL, 5 WARN

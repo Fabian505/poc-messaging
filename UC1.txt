@@ -1,0 +1,23 @@
+Genau anschauen, ob es an der Queue liegt oder an der Technologie
+
+Auch gern angeben, dass es länger läuft
+
+Von wann bis wann wird gemessen
+
+Mit getakter Durchsatz
+
+Mehrwert von UC5. Unterschiede der Laufzeit zwischen Technologien
+
+Persistent gegen replikation
+
+Persistent und nicht-Persistent
+
+Ursachen und Beobachtung
+
+Umschwankungen auszugleichen wurden 5 gemacht
+
+Producer und Comsumer einzeln beschränken
+
+Idealing anschauen einbringen
+
+Resourcendaten mal für UC1 mit aufnehmen
