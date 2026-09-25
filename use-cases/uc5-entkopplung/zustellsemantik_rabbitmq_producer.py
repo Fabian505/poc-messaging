@@ -1,45 +1,41 @@
-"""Use Case 4.2.4 (Entkopplung bei Ausfall und Zustellsemantiken)
-- Producer (RabbitMQ-Variante).
+"""UC5 - Producer (RabbitMQ). Persistent (delivery_mode=2) MIT Publisher
+Confirms: Erst das Confirm gilt als Bestaetigung. Ohne Confirms (erste
+Fassung) konnten Nachrichten beim Broker-Neustart unbemerkt verloren gehen,
+der Verlust waere faelschlich der Consumer-Semantik angelastet worden.
+Wiederverbindung bei Verbindungsverlust (pika hat keine eingebaute)."""
 
-Bleibt bewusst unveraendert ueber alle drei Semantiken hinweg, der einzige
-Unterschied zwischen at-most-once/at-least-once/exactly-once liegt auf
-Consumer-Seite (siehe zustellsemantik_rabbitmq_consumer.py). Nutzung:
-
-    python zustellsemantik_rabbitmq_producer.py
-"""
-
-import json
-from datetime import datetime, timezone
+import os
 
 import pika
 
-QUEUE_NAME = "semantics.test"
-MESSAGE_COUNT = 200
+import uc5_common as c
+
+QUEUE_NAME = os.environ["QUEUE_NAME"]
+state = {}
+
+
+def connect():
+    try:
+        state["conn"].close()
+    except Exception:
+        pass
+    conn = pika.BlockingConnection(pika.ConnectionParameters(host="localhost", port=5672))
+    ch = conn.channel()
+    ch.queue_declare(queue=QUEUE_NAME, durable=True)
+    ch.confirm_delivery()
+    state.update(conn=conn, ch=ch)
 
 
 def main():
-    connection = pika.BlockingConnection(
-        pika.ConnectionParameters(host="localhost", port=5672)
-    )
-    channel = connection.channel()
-    channel.queue_declare(queue=QUEUE_NAME, durable=True)
+    connect()
+    props = pika.BasicProperties(delivery_mode=2)
 
-    print(f"Start: {datetime.now(timezone.utc).isoformat()}")
+    def send(body):
+        state["ch"].basic_publish(exchange="", routing_key=QUEUE_NAME, body=body,
+                                  properties=props, mandatory=True)
 
-    for seq in range(1, MESSAGE_COUNT + 1):
-        payload = {
-            "seq": seq,
-            "sent_at": datetime.now(timezone.utc).isoformat(),
-        }
-        channel.basic_publish(
-            exchange="",
-            routing_key=QUEUE_NAME,
-            body=json.dumps(payload),
-            properties=pika.BasicProperties(delivery_mode=2),
-        )
-
-    connection.close()
-    print(f"Fertig: {MESSAGE_COUNT} Nachrichten gesendet.")
+    c.run_producer(send, reconnect_fn=connect)
+    state["conn"].close()
 
 
 if __name__ == "__main__":

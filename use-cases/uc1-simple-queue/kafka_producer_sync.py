@@ -22,7 +22,7 @@ from confluent_kafka import Producer
 
 TOPIC = "latency.test"
 WARMUP_COUNT = 10
-MEASURE_COUNT = 1_000_000
+MEASURE_COUNT = 10_000
 TOTAL_COUNT = WARMUP_COUNT + MEASURE_COUNT
 
 

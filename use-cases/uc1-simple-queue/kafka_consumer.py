@@ -13,6 +13,7 @@ inkonsistent zu den anderen Use Cases.
 """
 
 import json
+import os
 import time
 from datetime import datetime, timezone
 
@@ -22,7 +23,7 @@ from latency_stats import print_latency_summary
 
 TOPIC = "latency.test"
 WARMUP_COUNT = 10
-MEASURE_COUNT = 100
+MEASURE_COUNT = int(os.environ.get("MEASURE_COUNT", 100))
 TOTAL_COUNT = WARMUP_COUNT + MEASURE_COUNT
 
 
@@ -36,7 +37,22 @@ def main():
             "enable.auto.commit": False,
         }
     )
-    consumer.subscribe([TOPIC])
+    # "Bereit" erst melden, wenn Partitionen zugewiesen UND die Startposition
+    # fest auf das aktuelle Log-Ende gesetzt ist. Sonst loest
+    # auto.offset.reset=latest asynchron auf und Nachrichten, die in diesem
+    # Fenster eintreffen, werden uebersprungen -> Consumer wartet endlos.
+    assigned = {"done": False}
+
+    def on_assign(c, partitions):
+        for p in partitions:
+            _low, high = c.get_watermark_offsets(p, timeout=10.0)
+            p.offset = high
+        c.assign(partitions)
+        assigned["done"] = True
+
+    consumer.subscribe([TOPIC], on_assign=on_assign)
+    while not assigned["done"]:
+        consumer.poll(0.1)
 
     latencies = []
     received_count = 0

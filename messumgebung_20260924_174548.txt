@@ -1,0 +1,26 @@
+Messumgebung, erfasst 2026-09-24T17:45:56+02:00
+
+Host:        fabian-IdeaPad-Pro-5-14AKP10
+OS:          Linux Mint 22.3
+Kernel:      7.0.0-28-generic
+CPU:         AMD Ryzen AI 7 350 w/ Radeon 860M
+Threads:     16
+RAM gesamt:  30,6 GB
+Governor:    powersave 
+EPP:         balance_power
+Energieprof: n/a
+Load (1min): 1.86
+Platte:      /dev/nvme0n1p2 ext4
+
+Podman:      podman version 4.9.3
+  rabbitmq: docker.io/library/rabbitmq:3.13-management
+  kafka: docker.io/apache/kafka:3.8.0
+  ibmmq: icr.io/ibm-messaging/mq:latest
+
+Python venv: Python 3.13.9
+  confluent-kafka==2.5.0
+  pika==1.4.4
+  psutil==7.2.2
+  pymqi==1.12.11
+
+Pruefergebnis: 4 FAIL, 7 WARN

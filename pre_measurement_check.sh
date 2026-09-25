@@ -75,7 +75,8 @@ fi
 # ---------------------------------------------------------------- Sperre/Suspend
 section "Bildschirmsperre und Suspend"
 
-if command -v gsettings >/dev/null && gsettings list-schemas 2>/dev/null | grep -q org.gnome.settings-daemon.plugins.power; then
+gnome_schemas=$(gsettings list-schemas 2>/dev/null)
+if command -v gsettings >/dev/null && echo "$gnome_schemas" | grep -q org.gnome.settings-daemon.plugins.power; then
     sleep_ac=$(gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 2>/dev/null)
     idle=$(gsettings get org.gnome.desktop.session idle-delay 2>/dev/null | awk '{print $NF}')
     [[ "$sleep_ac" == "'nothing'" ]] && ok "Automatischer Suspend (Netzbetrieb): aus" \
@@ -135,8 +136,12 @@ podman exec kafka /opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:90
     >/tmp/pmc_topics 2>/dev/null && ok "Kafka erreichbar" || { bad "Kafka nicht erreichbar"; BROKERS_UP=0; }
 podman exec rabbitmq rabbitmq-diagnostics -q check_running >/dev/null 2>&1 \
     && ok "RabbitMQ erreichbar" || { bad "RabbitMQ nicht erreichbar"; BROKERS_UP=0; }
-podman exec ibmmq dspmq -m QM1 2>/dev/null | grep -q 'STATUS(Running)' \
-    && ok "IBM MQ QM1 laeuft" || { bad "IBM MQ QM1 laeuft nicht"; BROKERS_UP=0; }
+dspmq_out=$(podman exec ibmmq dspmq -m QM1 2>/dev/null)
+if echo "$dspmq_out" | grep -q 'STATUS(Running)'; then
+    ok "IBM MQ QM1 laeuft"
+else
+    bad "IBM MQ QM1 laeuft nicht"; BROKERS_UP=0
+fi
 
 # ---------------------------------------------------------------- Broker-Zustand
 section "Broker-Zustand (Reste frueherer Laeufe)"
@@ -151,9 +156,13 @@ maxdepth=$(mqsc "DIS QL(DEV.QUEUE.2) MAXDEPTH" | grep -oE 'MAXDEPTH\([0-9]+\)' |
 (( ${maxdepth:-0} >= 1200000 )) && ok "IBM MQ MAXDEPTH: $maxdepth" \
     || { bad "IBM MQ MAXDEPTH: ${maxdepth:-unbekannt}"; hint "./setup.sh erneut ausfuehren"; }
 
-mqsc "DIS TOPIC(DEV.BROADCAST.TOPIC) TOPICSTR" | grep -q "TOPICSTR(dev/broadcast)" \
-    && ok "IBM MQ Topic-Objekt DEV.BROADCAST.TOPIC vorhanden" \
-    || { bad "IBM MQ Topic-Objekt DEV.BROADCAST.TOPIC fehlt (UC3 scheitert mit 2035)"; hint "./setup.sh erneut ausfuehren"; }
+topic_info=$(mqsc "DIS TOPIC(DEV.BROADCAST.TOPIC) TOPICSTR")
+if echo "$topic_info" | grep -q "TOPICSTR(dev/broadcast)"; then
+    ok "IBM MQ Topic-Objekt DEV.BROADCAST.TOPIC vorhanden"
+else
+    bad "IBM MQ Topic-Objekt DEV.BROADCAST.TOPIC fehlt (UC3 scheitert mit 2035)"
+    hint "./setup.sh erneut ausfuehren"
+fi
 
 mq_subs=$(mqsc "DIS SUB('uc3-*')" | grep -oE "SUB\(uc3-[^)]*\)" || true)
 [[ -z "$mq_subs" ]] && ok "Keine verwaisten IBM-MQ-Subscriptions" \

@@ -1,10 +1,12 @@
 services:
   rabbitmq:
-    image: docker.io/rabbitmq:3.13-management
+    image: docker.io/rabbitmq:3.13   # ohne -management: kein Management-Plugin,
+      # damit keine Admin-Oberflaeche mitlaeuft (Vergleichbarkeit, siehe IBM MQ)
     container_name: rabbitmq
     ports:
       - "5672:5672"     # AMQP
-      - "15672:15672"   # Management UI (guest/guest, nur lokal)
+      # 15672 (Management UI) bewusst nicht veroeffentlicht, Image hat das
+      # Plugin ohnehin nicht aktiv.
     volumes:
       - ./rabbitmq/data:/var/lib/rabbitmq:Z
     cpus: 2.0
@@ -51,9 +53,14 @@ services:
       MQ_QMGR_NAME: QM1
       MQ_APP_PASSWORD: app12345
       MQ_ADMIN_PASSWORD: admin12345
+      MQ_ENABLE_EMBEDDED_WEB_SERVER: "false"
     ports:
       - "1414:1414"     # MQ Listener
-      - "9443:9443"     # Web Console (admin/admin12345)
+      # Web Console deaktiviert (MQ_ENABLE_EMBEDDED_WEB_SERVER), 9443 bewusst
+      # nicht mehr veroeffentlicht, damit sie nicht aus Versehen wieder aktiv
+      # erreichbar ist. Grund: Vergleichbarkeit mit RabbitMQ ohne Management-
+      # Plugin (siehe Kommentar dort) - keine Admin-Oberflaeche soll im
+      # Broker-Betrieb waehrend der Messung mitlaufen.
     volumes:
       - ./ibmmq/data:/mnt/mqm:Z
     cpus: 2.0

@@ -1,118 +1,70 @@
-"""Use Case 4.2.4 (Entkopplung bei Ausfall und Zustellsemantiken)
-- Consumer (Kafka-Variante), konfigurierbar fuer alle drei Zustellsemantiken.
+"""UC5 - Consumer (Kafka). Eigene Consumer Group pro Lauf, frisches Topic,
+earliest. Ein neu gestarteter Consumer setzt am letzten Commit fort.
 
-Nutzung:
-    python zustellsemantik_kafka_consumer.py <run_id> <semantik>
+session.timeout.ms=6000 (Minimum des Brokers): Nach einem SIGKILL wartet
+der Group Coordinator auf das Ablaufen der Session des toten Mitglieds,
+bevor er die Partition neu zuweist. Mit dem Standard (45 s) stuende der
+neu gestartete Consumer so lange still. Das ist ein eigener Befund zur
+Wiederanlaufzeit von Kafka nach einem Consumer-Absturz."""
 
-<semantik> ist eine von: at-most-once | at-least-once | exactly-once
-
-Unterschied zwischen den drei Modi, technisch:
-
-- at-most-once: Offset wird SOFORT nach dem Empfang committed, VOR der
-  Verarbeitung. Stuerzt der Consumer waehrend der Verarbeitung ab, gilt die
-  Nachricht aus Kafka-Sicht bereits als konsumiert und wird nach einem
-  Neustart NICHT erneut zugestellt, sie ist dann fuer diesen Consumer
-  verloren.
-- at-least-once: Offset wird ERST NACH erfolgreicher Verarbeitung
-  committed. Stuerzt der Consumer vorher ab, wird die Nachricht beim
-  naechsten Start erneut zugestellt, moeglicherweise als Duplikat.
-- exactly-once: wie at-least-once (Commit nach Verarbeitung), zusaetzlich
-  wird auf Anwendungsebene ueber ein Set bereits verarbeiteter (producer_id,
-  seq)-Paare dedupliziert. Das ist eine pragmatische Idempotent-Consumer-
-  Loesung, kein Einsatz der Kafka-Transactions-API, da hier kein
-  nachgelagertes Produce stattfindet, fuer das die Transactions-API
-  eigentlich gedacht ist. Kombiniert mit einem idempotenten Producer
-  (siehe zustellsemantik_kafka_producer.py) deckt das den in Kapitel 4.2.4
-  beschriebenen Testfall ab.
-
-Jede Instanz wird von run_fault_injection.py als Subprozess gestartet und
-kann von dort aus gezielt mit SIGKILL beendet werden, um einen Absturz zu
-simulieren. Bei manuellem Testen kann sie auch direkt gestartet und von
-Hand abgebrochen werden.
-"""
-
-import json
-import sys
-from datetime import datetime, timezone
+import os
+import time
 
 from confluent_kafka import Consumer
 
-TOPIC = "semantics.test"
-RESULTS_FILE = "results_semantics.jsonl"
-IDLE_TIMEOUT_SECONDS = 10.0
-VALID_SEMANTICS = {"at-most-once", "at-least-once", "exactly-once"}
+import uc5_common as c
+
+TOPIC = os.environ["TOPIC"]
 
 
 def main():
-    if len(sys.argv) != 3 or sys.argv[2] not in VALID_SEMANTICS:
-        print(f"Nutzung: python zustellsemantik_kafka_consumer.py <run_id> <{'|'.join(VALID_SEMANTICS)}>")
-        sys.exit(1)
+    c.install_sigterm()
+    consumer = Consumer({
+        "bootstrap.servers": "localhost:9092",
+        "group.id": f"uc5-{c.RUN_ID}",
+        "auto.offset.reset": "earliest",
+        "enable.auto.commit": False,
+        "session.timeout.ms": 6000,
+        "heartbeat.interval.ms": 2000,
+    })
+    assigned = {"done": False}
 
-    run_id, semantics = sys.argv[1], sys.argv[2]
+    def on_assign(cons, partitions):
+        cons.assign(partitions)
+        assigned["done"] = True
 
-    consumer = Consumer(
-        {
-            "bootstrap.servers": "localhost:9092",
-            "group.id": run_id,
-            "auto.offset.reset": "latest",
-            "enable.auto.commit": False,
-        }
-    )
-    consumer.subscribe([TOPIC])
+    consumer.subscribe([TOPIC], on_assign=on_assign)
+    # ACHTUNG: Derselbe poll()-Aufruf, der die Zuweisung ausloest, kann bei
+    # vorhandenem Rueckstand (Neustart nach Absturz) bereits die erste
+    # Nachricht zurueckgeben. Die erste Fassung verwarf sie: sie wurde nie
+    # verarbeitet, aber durch den Commit der Folgenachricht uebersprungen
+    # (Verlust genau einer Nachricht in ALLEN Semantiken).
+    pending = None
+    deadline = time.time() + 120
+    while not assigned["done"] and not c.STOP["flag"]:
+        m = consumer.poll(0.2)
+        if m is not None and not m.error():
+            pending = m
+        if time.time() > deadline:
+            raise TimeoutError("Keine Partitionszuweisung")
+    store = c.EffectStore()
+    c.ready()
 
-    seen_seqs = set()  # nur fuer exactly-once relevant
-    print(f"[{semantics}] Bereit, run_id '{run_id}'. Warte auf Nachrichten.")
-
-    with open(RESULTS_FILE, "a") as f:
-        try:
-            while True:
-                msg = consumer.poll(IDLE_TIMEOUT_SECONDS)
-                if msg is None:
-                    break
-                if msg.error():
-                    print(f"Fehler: {msg.error()}")
-                    continue
-
-                if semantics == "at-most-once":
-                    # Commit SOFORT, vor der Verarbeitung: bei einem Absturz
-                    # danach ist die Nachricht fuer immer weg.
-                    consumer.commit(message=msg, asynchronous=False)
-
-                payload = json.loads(msg.value())
-                seq = payload["seq"]
-
-                if semantics == "exactly-once" and seq in seen_seqs:
-                    # Duplikat durch Redelivery erkannt und uebersprungen,
-                    # trotzdem protokollieren, um es in der Auswertung
-                    # sichtbar zu machen.
-                    f.write(json.dumps({
-                        "technology": "kafka", "run_id": run_id,
-                        "semantics": semantics, "seq": seq,
-                        "received_at": datetime.now(timezone.utc).isoformat(),
-                        "duplicate_skipped": True,
-                    }) + "\n")
-                    if semantics != "at-most-once":
-                        consumer.commit(message=msg, asynchronous=False)
-                    continue
-
-                # "Verarbeitung" (hier: Parsen reicht als Stellvertreter)
-                seen_seqs.add(seq)
-
-                f.write(json.dumps({
-                    "technology": "kafka", "run_id": run_id,
-                    "semantics": semantics, "seq": seq,
-                    "received_at": datetime.now(timezone.utc).isoformat(),
-                    "duplicate_skipped": False,
-                }) + "\n")
-                f.flush()
-
-                if semantics != "at-most-once":
-                    # at-least-once und exactly-once: Commit NACH Verarbeitung
-                    consumer.commit(message=msg, asynchronous=False)
-        except KeyboardInterrupt:
-            pass
-        finally:
-            consumer.close()
+    try:
+        while not c.STOP["flag"]:
+            if pending is not None:
+                msg, pending = pending, None
+            else:
+                msg = consumer.poll(0.5)
+            if msg is None:
+                continue
+            if msg.error():
+                print(f"Fehler: {msg.error()}", flush=True)
+                continue
+            c.process(store, msg.value(),
+                      lambda: consumer.commit(message=msg, asynchronous=False))
+    finally:
+        consumer.close()
 
 
 if __name__ == "__main__":

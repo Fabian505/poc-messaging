@@ -19,6 +19,7 @@ gemessen sind.
 """
 
 import json
+import os
 from datetime import datetime, timezone
 
 import pymqi
@@ -33,7 +34,7 @@ QUEUE_NAME = "DEV.QUEUE.2"
 USER = "app"
 PASSWORD = "app12345"
 WARMUP_COUNT = 10
-MEASURE_COUNT = 100
+MEASURE_COUNT = int(os.environ.get("MEASURE_COUNT", 100))
 TOTAL_COUNT = WARMUP_COUNT + MEASURE_COUNT
 
 conn_info = f"{HOST}({PORT})"

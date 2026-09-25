@@ -1,45 +1,37 @@
-"""Use Case 4.2.4 (Entkopplung bei Ausfall und Zustellsemantiken)
-- Producer (IBM MQ-Variante).
-
-Bleibt bewusst unveraendert ueber alle drei Semantiken hinweg, der
-Unterschied liegt komplett auf Consumer-Seite. Nutzung:
-
-    python zustellsemantik_ibmmq_producer.py
-"""
-
-import json
-from datetime import datetime, timezone
+"""UC5 - Producer (IBM MQ). Persistent (MD an put() uebergeben!),
+Wiederverbindung bei MQMIError (pymqi hat keine eingebaute)."""
 
 import pymqi
 
-QUEUE_MANAGER = "QM1"
-CHANNEL = "DEV.APP.SVRCONN"
-HOST = "localhost"
-PORT = "1414"
-QUEUE_NAME = "DEV.QUEUE.2"
-USER = "app"
-PASSWORD = "app12345"
-MESSAGE_COUNT = 200
+import uc5_common as c
 
-conn_info = f"{HOST}({PORT})"
+QUEUE_MANAGER, CHANNEL, CONN_INFO = "QM1", "DEV.APP.SVRCONN", "localhost(1414)"
+QUEUE_NAME, USER, PASSWORD = "DEV.QUEUE.2", "app", "app12345"
+state = {}
+
+
+def connect():
+    for key in ("queue", "qmgr"):
+        try:
+            state[key].close() if key == "queue" else state[key].disconnect()
+        except Exception:
+            pass
+    qmgr = pymqi.connect(QUEUE_MANAGER, CHANNEL, CONN_INFO, USER, PASSWORD)
+    state.update(qmgr=qmgr, queue=pymqi.Queue(qmgr, QUEUE_NAME))
 
 
 def main():
-    qmgr = pymqi.connect(QUEUE_MANAGER, CHANNEL, conn_info, USER, PASSWORD)
-    queue = pymqi.Queue(qmgr, QUEUE_NAME)
+    connect()
+    pmo = pymqi.PMO(Options=pymqi.CMQC.MQPMO_NEW_MSG_ID | pymqi.CMQC.MQPMO_FAIL_IF_QUIESCING)
 
-    print(f"Start: {datetime.now(timezone.utc).isoformat()}")
+    def send(body):
+        md = pymqi.MD()
+        md.Persistence = pymqi.CMQC.MQPER_PERSISTENT
+        state["queue"].put(body.encode(), md, pmo)
 
-    for seq in range(1, MESSAGE_COUNT + 1):
-        payload = {
-            "seq": seq,
-            "sent_at": datetime.now(timezone.utc).isoformat(),
-        }
-        queue.put(json.dumps(payload).encode())
-
-    queue.close()
-    qmgr.disconnect()
-    print(f"Fertig: {MESSAGE_COUNT} Nachrichten gesendet.")
+    c.run_producer(send, reconnect_fn=connect)
+    state["queue"].close()
+    state["qmgr"].disconnect()
 
 
 if __name__ == "__main__":

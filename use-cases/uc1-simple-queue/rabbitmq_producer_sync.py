@@ -1,30 +1,37 @@
-"""Latenzmessung Kapitel 6.1.1 - Producer (RabbitMQ-Variante, synchron ohne Delay).
+"""Latenzmessung Kapitel 6.1.1 - Producer (RabbitMQ-Variante, synchron und getaktet).
 
-RabbitMQ-Aequivalent zu kafka_producer_sync.py: kein time.sleep() zwischen
-den Nachrichten, aber channel.confirm_delivery() aktiviert, damit
-basic_publish() erst zurueckkehrt, wenn der Broker die Nachricht bestaetigt
-hat. Das schliesst aus, dass der Producer selbst puffert, unabhaengig davon
-bleibt aber ein moeglicher Effekt durch den Consumer-seitigen
-prefetch_count=10 bestehen, das ist bewusst eine separate Fragestellung.
+channel.confirm_delivery() macht basic_publish() synchron (kehrt erst nach
+Broker-Bestaetigung zurueck), Aequivalent zu flush() bei Kafka.
 
-Vergleichspunkte:
-- rabbitmq_producer.py            (Burst, keine Confirms)
-- rabbitmq_producer_delayed.py    (Delay, keine Confirms)
-- dieses Skript                   (kein Delay, mit Confirms)
+Taktung: fahrplanbasiert (absolute Sendezeitpunkte im Abstand
+INTERVAL_SECONDS), identisch zu Kafka und IBM MQ. Frueher lief RabbitMQ
+ungedrosselt, weil sich durch die Confirms keine Warteschlange aufbaute;
+die angebotene Last war dann aber hoeher als bei Kafka/IBM MQ und die
+Latenzen damit nicht unter gleichen Bedingungen gemessen. Die tatsaechlich
+erreichte Rate wird am Ende ausgegeben und gehoert in den Messbericht.
+
+delivery_mode=2 (persistent) ist die fuer Kapitel 6.1.1 methodisch
+richtige Referenzkonfiguration, siehe Kapitel 5.3.1 und den
+RabbitMQ-Persistenz-Befund in Kapitel 6. delivery_mode=1 nur fuer
+Diagnosezwecke verwenden, nicht fuer die berichteten Werte.
 
 Consumer bleibt unveraendert (rabbitmq_consumer.py), muss weiterhin VORHER
 gestartet werden.
 """
 
 import json
+import os
+import time
 from datetime import datetime, timezone
 
 import pika
 
 QUEUE_NAME = "latency.test"
 WARMUP_COUNT = 10
-MEASURE_COUNT = 1_000_000
+MEASURE_COUNT = int(os.environ.get("MEASURE_COUNT", 10000))
 TOTAL_COUNT = WARMUP_COUNT + MEASURE_COUNT
+TARGET_RATE = float(os.environ.get("TARGET_RATE", 500))  # Soll-Last in Nachrichten/s
+INTERVAL_SECONDS = 1 / TARGET_RATE  # Standard 500/s = 2 ms, fuer alle drei identisch
 
 
 def main():
@@ -37,6 +44,9 @@ def main():
 
     print(f"Start: {datetime.now(timezone.utc).isoformat()}")
 
+    behind_count = 0
+    t_start = time.perf_counter()
+    next_send = t_start
     for seq in range(1, TOTAL_COUNT + 1):
         payload = {
             "seq": seq,
@@ -46,13 +56,25 @@ def main():
             exchange="",
             routing_key=QUEUE_NAME,
             body=json.dumps(payload),
-            properties=pika.BasicProperties(delivery_mode=1),
+            properties=pika.BasicProperties(delivery_mode=2),
         )
 
+        next_send += INTERVAL_SECONDS
+        delay = next_send - time.perf_counter()
+        if delay > 0:
+            time.sleep(delay)
+        else:
+            # Im Rueckstand: nicht in Bursts nachholen, Fahrplan neu ansetzen
+            next_send = time.perf_counter()
+            behind_count += 1
+
+    elapsed = time.perf_counter() - t_start
     connection.close()
     print(f"Fertig: {TOTAL_COUNT} Nachrichten gesendet "
           f"({WARMUP_COUNT} Warmup, {MEASURE_COUNT} gemessen), "
-          "ohne Delay, mit Publisher Confirms.")
+          f"getaktet mit {INTERVAL_SECONDS * 1000:.1f} ms Intervall, mit Publisher Confirms.")
+    print(f"Tatsaechliche Rate: {TOTAL_COUNT / elapsed:.1f} Nachrichten/s "
+          f"(Soll: {1 / INTERVAL_SECONDS:.0f}), Intervalle im Rueckstand: {behind_count}")
     print(f"End: {datetime.now(timezone.utc).isoformat()}")
 
 

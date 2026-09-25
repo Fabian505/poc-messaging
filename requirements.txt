@@ -1,3 +1,8 @@
-pika==1.3.2
+# Python-Abhaengigkeiten fuer alle Use Cases (UC1-UC5).
+# Versionen fest gepinnt, damit Laptop und Home-PC identische Clients nutzen
+# (Client-Verhalten wie Batching oder Commit-Semantik ist Teil der Messung).
 confluent-kafka==2.5.0
+pika==1.4.4
 pymqi==1.12.11
+psutil==7.2.2
+

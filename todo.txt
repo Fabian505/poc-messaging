@@ -96,3 +96,5 @@ Entscheidungsfrage für dich: welche der beiden Wiederholungsarten wäre für eu
 komplett durchgekautes Technologie-Kapitel mit sechs Use-Case-Unterabschnitten darin? Das ist im Kern eine Abwägung zwischen Lesbarkeit für den Vergleich und Redundanzvermeidung im Text.
 
 Idealerweise als Datenspeicher wird aber auch zur Kommunikation verwendet
+
+Die zweite Phase solltest du mit dem Betreuer bei DATEV kurz abstimmen, bevor du Zeit hineinsteckst. Ob die absolute Lastgrenze der Broker für DPSC überhaupt relevant ist, hängt davon ab, welche Nachrichtenraten dort realistisch anfallen. Liegen die weit unter 1.000/s, ist der Befund zum Client-Engpass für die Empfehlung wertvoller als ein Broker-Maximum von 200.000/s.

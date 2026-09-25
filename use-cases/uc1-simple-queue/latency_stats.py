@@ -12,7 +12,14 @@ def print_latency_summary(latencies_seconds, technology_name):
         print("Keine Messwerte vorhanden.")
         return
 
-    latencies_ms = sorted(l * 1000 for l in latencies_seconds)
+    # Drift: Mittel des letzten minus des ersten Zehntels in ANKUNFTSreihenfolge.
+    # Nahe 0 = stabil. Deutlich positiv = Warteschlange baut sich im Lauf auf,
+    # d.h. die Soll-Last liegt ueber der Verarbeitungskapazitaet (Saettigung).
+    arrival_ms = [l * 1000 for l in latencies_seconds]
+    tenth = max(1, len(arrival_ms) // 10)
+    drift = statistics.mean(arrival_ms[-tenth:]) - statistics.mean(arrival_ms[:tenth])
+
+    latencies_ms = sorted(arrival_ms)
     n = len(latencies_ms)
 
     def percentile(p):
@@ -29,3 +36,4 @@ def print_latency_summary(latencies_seconds, technology_name):
     print(f"P99:    {percentile(99):.2f} ms")
     if n > 1:
         print(f"Stdabw: {statistics.stdev(latencies_ms):.2f} ms")
+    print(f"Drift:  {drift:.2f} ms")
