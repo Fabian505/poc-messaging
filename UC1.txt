@@ -4,6 +4,23 @@ Auch gern angeben, dass es länger läuft
 
 Von wann bis wann wird gemessen
 
+Von wann bis wann messen wir?
+Ich habe die Skripte nicht vor mir, nur den dokumentierten Stand. Demnach misst die Latenz von sent_at bis zum Empfang beim Consumer.
+
+Enthalten sind damit:
+
+Serialisierung
+Client-Bibliothek
+Netzwerk (Loopback)
+Broker-Routing
+Zustellung
+bei IBM MQ zusätzlich Liegezeit in der Queue, sobald der Consumer zurückfällt
+
+Nicht enthalten sind:
+
+die Wartezeit des Producers auf Confirm bzw. Put-Rückkehr, also genau der Pfad, auf dem die Fsync-Kosten liegen
+Verarbeitung und Ack beim Consumer
+
 Mit getakter Durchsatz
 
 Mehrwert von UC5. Unterschiede der Laufzeit zwischen Technologien
@@ -21,3 +38,4 @@ Producer und Comsumer einzeln beschränken
 Idealing anschauen einbringen
 
 Resourcendaten mal für UC1 mit aufnehmen
+

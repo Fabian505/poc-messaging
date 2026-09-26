@@ -1,0 +1,227 @@
+[2026-09-26T02:00:38+02:00] MESSTAG START
+[2026-09-26T02:00:46+02:00] === BLOCK START: kafka ===
+[2026-09-26T02:00:46+02:00] START: UC1 Aufwaermen kafka
+[kafka] Lauf 1/1 mit 5000 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.18 ms, P99=0.35 ms, Rate=498.8 msg/s, Rueckstand=3
+
+Bericht geschrieben: uc1_bericht_5000n_500r_1790380862.md
+[2026-09-26T02:01:02+02:00] OK: UC1 Aufwaermen kafka
+OK: 1 Lauf/Laeufe geprueft, Rate und Rueckstand innerhalb der Schwellen
+[2026-09-26T02:01:02+02:00] START: UC1 Referenz kafka
+/home/fabianhamacher/Desktop/poc-messaging/tools/monitor_resources.sh: line 21: iostat: command not found
+[kafka] Lauf 1/1 mit 200 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.13 ms, P99=0.18 ms, Rate=499.9 msg/s, Rueckstand=0
+
+Bericht geschrieben: uc1_bericht_200n_500r_1790380869.md
+[2026-09-26T02:01:09+02:00] OK: UC1 Referenz kafka
+[2026-09-26T02:01:09+02:00] FEHLER: kein Bericht gefunden fuer Muster uc1_bericht_10000n_*.md
+[2026-09-26T02:01:09+02:00] START: UC1b Stufenreihe kafka
+[kafka] Lauf 1/1 mit 500 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.13 ms, P99=0.20 ms, Rate=500.0 msg/s, Rueckstand=0
+
+Bericht geschrieben: uc1_bericht_500n_500r_1790380876.md
+[kafka] Lauf 1/1 mit 500 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.12 ms, P99=0.19 ms, Rate=998.2 msg/s, Rueckstand=1
+
+Bericht geschrieben: uc1_bericht_500n_1000r_1790380883.md
+[kafka] Lauf 1/1 mit 500 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.17 ms, P99=0.21 ms, Rate=1377.4 msg/s, Rueckstand=2
+
+Bericht geschrieben: uc1_bericht_500n_1500r_1790380889.md
+[kafka] Lauf 1/1 mit 500 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.09 ms, P99=0.15 ms, Rate=1989.8 msg/s, Rueckstand=1
+
+Bericht geschrieben: uc1_bericht_500n_2000r_1790380896.md
+[kafka] Lauf 1/1 mit 500 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.65 ms, P99=14.62 ms, Rate=2187.7 msg/s, Rueckstand=4
+
+Bericht geschrieben: uc1_bericht_500n_3000r_1790380902.md
+[2026-09-26T02:01:42+02:00] OK: UC1b Stufenreihe kafka
+[2026-09-26T02:01:42+02:00] START: UC2 kafka
+[kafka] 1 Instanz(en), Lauf 1/1 ...
+[kafka] 1 Instanz(en): 8349.0 msg/s, Verteilung 1000
+[kafka] 2 Instanz(en), Lauf 1/1 ...
+[kafka] 2 Instanz(en): 28925.2 msg/s, Verteilung 500/500
+[kafka] 4 Instanz(en), Lauf 1/1 ...
+[kafka] 4 Instanz(en): 32805.7 msg/s, Verteilung 250/250/250/250
+[kafka] 8 Instanz(en), Lauf 1/1 ...
+[kafka] 8 Instanz(en): 31307.3 msg/s, Verteilung 125/125/125/125/125/125/125/125
+
+Bericht geschrieben: uc2_bericht_1000n_1790380953.md
+[2026-09-26T02:02:33+02:00] OK: UC2 kafka
+[2026-09-26T02:02:33+02:00] START: UC3 kafka
+[kafka] 1 Subscriber, Lauf 1/1 ...
+[kafka] 1 Subscriber: Mittel=0.14 ms, P99=0.23 ms, Versatz P99=- ms, Rueckstand=1, vollstaendig, Duplikate=0
+[kafka] 2 Subscriber, Lauf 1/1 ...
+[kafka] 2 Subscriber: Mittel=0.16 ms, P99=0.24 ms, Versatz P99=0.05 ms, Rueckstand=0, vollstaendig, Duplikate=0
+[kafka] 4 Subscriber, Lauf 1/1 ...
+[kafka] 4 Subscriber: Mittel=0.30 ms, P99=1.18 ms, Versatz P99=0.14 ms, Rueckstand=1, vollstaendig, Duplikate=0
+[kafka] 8 Subscriber, Lauf 1/1 ...
+[kafka] 8 Subscriber: Mittel=0.23 ms, P99=0.45 ms, Versatz P99=0.20 ms, Rueckstand=1, vollstaendig, Duplikate=0
+
+Bericht geschrieben: uc3_bericht_200n_1790380970.md
+[2026-09-26T02:02:50+02:00] OK: UC3 kafka
+[2026-09-26T02:02:50+02:00] START: UC4 kafka
+[kafka] 1 Producer, Lauf 1/1 ...
+[kafka] 1 Producer: Mittel=0.12 ms, P99=0.22 ms, Reihenfolge-Verletzungen=0, Rate=502.1, Rueckstand=1, vollstaendig
+[kafka] 2 Producer, Lauf 1/1 ...
+[kafka] 2 Producer: Mittel=0.13 ms, P99=0.18 ms, Reihenfolge-Verletzungen=0, Rate=504.4, Rueckstand=0, vollstaendig
+[kafka] 4 Producer, Lauf 1/1 ...
+[kafka] 4 Producer: Mittel=0.15 ms, P99=0.20 ms, Reihenfolge-Verletzungen=0, Rate=508.4, Rueckstand=0, vollstaendig
+[kafka] 8 Producer, Lauf 1/1 ...
+[kafka] 8 Producer: Mittel=0.14 ms, P99=0.21 ms, Reihenfolge-Verletzungen=0, Rate=514.4, Rueckstand=0, vollstaendig
+
+Bericht geschrieben: uc4_bericht_200n_1790380989.md
+[2026-09-26T02:03:09+02:00] OK: UC4 kafka
+[2026-09-26T02:03:09+02:00] === BLOCK ENDE: kafka ===
+[2026-09-26T02:03:14+02:00] === BLOCK START: rabbitmq ===
+[2026-09-26T02:03:14+02:00] START: UC1 Aufwaermen rabbitmq
+[rabbitmq] Lauf 1/1 mit 500 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.14 ms, P99=0.21 ms, Rate=322.6 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_500r_1790380996.md
+[2026-09-26T02:03:16+02:00] OK: UC1 Aufwaermen rabbitmq
+FAIL: Lauf 1: Rate 322.6 weicht 35.5% vom Soll 500.0 ab; Lauf 1: Rueckstand 510 (102.0% von 500)
+[2026-09-26T02:03:17+02:00] REPORT-CHECK FEHLGESCHLAGEN: uc1_bericht_500n_500r_1790380996.md (siehe /home/fabianhamacher/Desktop/poc-messaging/messungen/orchestrator_20260926_020038.log)
+[2026-09-26T02:03:17+02:00] ABBRUCH BLOCK: UC1 rabbitmq (Aufwaerm-Check)  -- weiter mit naechstem Block
+[2026-09-26T02:03:17+02:00] START: UC1b Stufenreihe rabbitmq
+[rabbitmq] Lauf 1/1 mit 500 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.13 ms, P99=0.21 ms, Rate=332.3 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_500r_1790380999.md
+[rabbitmq] Lauf 1/1 mit 500 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.13 ms, P99=0.20 ms, Rate=329.2 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_1000r_1790381002.md
+[rabbitmq] Lauf 1/1 mit 500 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.13 ms, P99=0.20 ms, Rate=329.9 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_1500r_1790381004.md
+[rabbitmq] Lauf 1/1 mit 500 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.15 ms, P99=0.26 ms, Rate=321.9 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_2000r_1790381007.md
+[rabbitmq] Lauf 1/1 mit 500 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.14 ms, P99=0.21 ms, Rate=319.1 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_3000r_1790381010.md
+[2026-09-26T02:03:30+02:00] OK: UC1b Stufenreihe rabbitmq
+[2026-09-26T02:03:30+02:00] START: UC2 rabbitmq
+[rabbitmq] 1 Instanz(en), Lauf 1/1 ...
+[rabbitmq] Lauf abgebrochen: RuntimeError: Queue-Tiefe nach Vorbefuellung None, erwartet 0. Queue nicht geleert oder Vorbefuellung unvollstaendig.
+[rabbitmq] 2 Instanz(en), Lauf 1/1 ...
+[rabbitmq] Lauf abgebrochen: RuntimeError: Queue-Tiefe nach Vorbefuellung None, erwartet 0. Queue nicht geleert oder Vorbefuellung unvollstaendig.
+[rabbitmq] 4 Instanz(en), Lauf 1/1 ...
+[rabbitmq] Lauf abgebrochen: RuntimeError: Queue-Tiefe nach Vorbefuellung None, erwartet 0. Queue nicht geleert oder Vorbefuellung unvollstaendig.
+[rabbitmq] 8 Instanz(en), Lauf 1/1 ...
+[rabbitmq] Lauf abgebrochen: RuntimeError: Queue-Tiefe nach Vorbefuellung None, erwartet 0. Queue nicht geleert oder Vorbefuellung unvollstaendig.
+
+Bericht geschrieben: uc2_bericht_1000n_1790381092.md
+[2026-09-26T02:04:52+02:00] OK: UC2 rabbitmq
+[2026-09-26T02:04:52+02:00] START: UC3 rabbitmq
+[rabbitmq] 1 Subscriber, Lauf 1/1 ...
+[rabbitmq] 1 Subscriber: Mittel=0.14 ms, P99=0.21 ms, Versatz P99=- ms, Rueckstand=210, vollstaendig, Duplikate=0
+[rabbitmq] 2 Subscriber, Lauf 1/1 ...
+[rabbitmq] 2 Subscriber: Mittel=0.18 ms, P99=0.30 ms, Versatz P99=0.06 ms, Rueckstand=210, vollstaendig, Duplikate=0
+[rabbitmq] 4 Subscriber, Lauf 1/1 ...
+[rabbitmq] 4 Subscriber: Mittel=0.23 ms, P99=0.32 ms, Versatz P99=0.07 ms, Rueckstand=210, vollstaendig, Duplikate=0
+[rabbitmq] 8 Subscriber, Lauf 1/1 ...
+[rabbitmq] 8 Subscriber: Mittel=0.30 ms, P99=0.38 ms, Versatz P99=0.16 ms, Rueckstand=210, vollstaendig, Duplikate=0
+
+Bericht geschrieben: uc3_bericht_200n_1790381103.md
+[2026-09-26T02:05:03+02:00] OK: UC3 rabbitmq
+[2026-09-26T02:05:03+02:00] START: UC4 rabbitmq
+[rabbitmq] 1 Producer, Lauf 1/1 ...
+[rabbitmq] 1 Producer: Mittel=0.15 ms, P99=0.23 ms, Reihenfolge-Verletzungen=0, Rate=326.5, Rueckstand=210, vollstaendig
+[rabbitmq] 2 Producer, Lauf 1/1 ...
+[rabbitmq] 2 Producer: Mittel=2.96 ms, P99=3.89 ms, Reihenfolge-Verletzungen=0, Rate=338.6, Rueckstand=220, vollstaendig
+[rabbitmq] 4 Producer, Lauf 1/1 ...
+[rabbitmq] 4 Producer: Mittel=1.74 ms, P99=3.74 ms, Reihenfolge-Verletzungen=0, Rate=503.2, Rueckstand=0, vollstaendig
+[rabbitmq] 8 Producer, Lauf 1/1 ...
+[rabbitmq] 8 Producer: Mittel=1.69 ms, P99=3.50 ms, Reihenfolge-Verletzungen=0, Rate=510.3, Rueckstand=0, vollstaendig
+
+Bericht geschrieben: uc4_bericht_200n_1790381111.md
+[2026-09-26T02:05:11+02:00] OK: UC4 rabbitmq
+[2026-09-26T02:05:11+02:00] === BLOCK ENDE: rabbitmq ===
+[2026-09-26T02:05:23+02:00] === BLOCK START: ibmmq ===
+[2026-09-26T02:05:23+02:00] START: UC1 Aufwaermen ibmmq
+[ibmmq] Lauf 1/1 mit 500 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=907.14 ms, P99=1312.73 ms, Rate=193.1 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_500r_1790381128.md
+[2026-09-26T02:05:28+02:00] OK: UC1 Aufwaermen ibmmq
+FAIL: Lauf 1: Rate 193.1 weicht 61.4% vom Soll 500.0 ab; Lauf 1: Rueckstand 510 (102.0% von 500)
+[2026-09-26T02:05:28+02:00] REPORT-CHECK FEHLGESCHLAGEN: uc1_bericht_500n_500r_1790381128.md (siehe /home/fabianhamacher/Desktop/poc-messaging/messungen/orchestrator_20260926_020038.log)
+[2026-09-26T02:05:28+02:00] ABBRUCH BLOCK: UC1 ibmmq (Aufwaerm-Check)  -- weiter mit naechstem Block
+[2026-09-26T02:05:28+02:00] START: UC1b Stufenreihe ibmmq
+[ibmmq] Lauf 1/1 mit 500 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=924.18 ms, P99=1320.94 ms, Rate=190.0 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_500r_1790381132.md
+[ibmmq] Lauf 1/1 mit 500 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=907.21 ms, P99=1314.10 ms, Rate=193.9 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_1000r_1790381137.md
+[ibmmq] Lauf 1/1 mit 500 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=905.87 ms, P99=1329.89 ms, Rate=188.8 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_1500r_1790381141.md
+[ibmmq] Lauf 1/1 mit 500 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=915.88 ms, P99=1323.04 ms, Rate=190.2 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_2000r_1790381146.md
+[ibmmq] Lauf 1/1 mit 500 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=912.01 ms, P99=1320.88 ms, Rate=190.9 msg/s, Rueckstand=510
+
+Bericht geschrieben: uc1_bericht_500n_3000r_1790381150.md
+[2026-09-26T02:05:50+02:00] OK: UC1b Stufenreihe ibmmq
+[2026-09-26T02:05:50+02:00] START: UC2 ibmmq
+[ibmmq] 1 Instanz(en), Lauf 1/1 ...
+[ibmmq] 1 Instanz(en): 274.1 msg/s, Verteilung 1000
+[ibmmq] 2 Instanz(en), Lauf 1/1 ...
+[ibmmq] 2 Instanz(en): 322.7 msg/s, Verteilung 498/502
+[ibmmq] 4 Instanz(en), Lauf 1/1 ...
+[ibmmq] 4 Instanz(en): 556.2 msg/s, Verteilung 246/247/250/257
+[ibmmq] 8 Instanz(en), Lauf 1/1 ...
+[ibmmq] 8 Instanz(en): 1148.1 msg/s, Verteilung 120/125/126/126/126/125/128/124
+
+Bericht geschrieben: uc2_bericht_1000n_1790381182.md
+[2026-09-26T02:06:22+02:00] OK: UC2 ibmmq
+[2026-09-26T02:06:22+02:00] START: UC3 ibmmq
+[ibmmq] 1 Subscriber, Lauf 1/1 ...
+[ibmmq] 1 Subscriber: Mittel=150.88 ms, P99=257.39 ms, Versatz P99=- ms, Rueckstand=210, vollstaendig, Duplikate=0
+[ibmmq] 2 Subscriber, Lauf 1/1 ...
+[ibmmq] 2 Subscriber: Mittel=91.65 ms, P99=174.21 ms, Versatz P99=59.05 ms, Rueckstand=210, vollstaendig, Duplikate=0
+[ibmmq] 4 Subscriber, Lauf 1/1 ...
+[ibmmq] 4 Subscriber: Mittel=8.52 ms, P99=12.28 ms, Versatz P99=3.31 ms, Rueckstand=210, vollstaendig, Duplikate=0
+[ibmmq] 8 Subscriber, Lauf 1/1 ...
+[ibmmq] 8 Subscriber: Mittel=9.86 ms, P99=12.98 ms, Versatz P99=3.62 ms, Rueckstand=210, vollstaendig, Duplikate=0
+
+Bericht geschrieben: uc3_bericht_200n_1790381193.md
+[2026-09-26T02:06:33+02:00] OK: UC3 ibmmq
+[2026-09-26T02:06:33+02:00] START: UC4 ibmmq
+[ibmmq] 1 Producer, Lauf 1/1 ...
+[ibmmq] 1 Producer: Mittel=389.23 ms, P99=541.09 ms, Reihenfolge-Verletzungen=0, Rate=194.4, Rueckstand=210, vollstaendig
+[ibmmq] 2 Producer, Lauf 1/1 ...
+[ibmmq] 2 Producer: Mittel=390.97 ms, P99=485.08 ms, Reihenfolge-Verletzungen=0, Rate=306.9, Rueckstand=165, vollstaendig
+[ibmmq] 4 Producer, Lauf 1/1 ...
+[ibmmq] 4 Producer: Mittel=433.28 ms, P99=586.55 ms, Reihenfolge-Verletzungen=0, Rate=492.8, Rueckstand=43, vollstaendig
+[ibmmq] 8 Producer, Lauf 1/1 ...
+[ibmmq] 8 Producer: Mittel=559.42 ms, P99=714.28 ms, Reihenfolge-Verletzungen=0, Rate=510.1, Rueckstand=0, vollstaendig
+
+Bericht geschrieben: uc4_bericht_200n_1790381204.md
+[2026-09-26T02:06:44+02:00] OK: UC4 ibmmq
+[2026-09-26T02:06:44+02:00] === BLOCK ENDE: ibmmq ===
+[2026-09-26T02:06:52+02:00] START: UC5 Aufwaermen kafka
+[2026-09-26T02:08:52+02:00] FEHLER (124): UC5 Aufwaermen kafka
+[2026-09-26T02:08:52+02:00] START: UC5 Messung kafka
+[2026-09-26T02:10:52+02:00] FEHLER (124): UC5 Messung kafka
+[2026-09-26T02:10:52+02:00] START: UC5 Aufwaermen rabbitmq
+[2026-09-26T02:12:52+02:00] FEHLER (124): UC5 Aufwaermen rabbitmq
+[2026-09-26T02:12:52+02:00] START: UC5 Messung rabbitmq
+[2026-09-26T02:14:52+02:00] FEHLER (124): UC5 Messung rabbitmq
+[2026-09-26T02:14:52+02:00] START: UC5 Aufwaermen ibmmq
+[2026-09-26T02:16:52+02:00] FEHLER (124): UC5 Aufwaermen ibmmq
+[2026-09-26T02:16:52+02:00] START: UC5 Messung ibmmq
+[2026-09-26T02:18:52+02:00] FEHLER (124): UC5 Messung ibmmq
+[2026-09-26T02:18:52+02:00] MESSTAG ENDE

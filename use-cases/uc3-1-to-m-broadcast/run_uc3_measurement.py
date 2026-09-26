@@ -43,14 +43,18 @@ import threading
 import time
 from datetime import datetime, timezone
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+def script_path(name):
+    return os.path.join(SCRIPT_DIR, name)
+
 VALID_TECHNOLOGIES = ["kafka", "rabbitmq", "ibmmq"]
 KAFKA_BOOTSTRAP = "localhost:9092"
 WARMUP_COUNT = 10
 
 TECH_CONFIG = {
-    "kafka": ("broadcast_kafka_producer.py", "broadcast_kafka_consumer.py"),
-    "rabbitmq": ("broadcast_rabbitmq_producer.py", "broadcast_rabbitmq_consumer.py"),
-    "ibmmq": ("broadcast_ibmmq_producer.py", "broadcast_ibmmq_consumer.py"),
+    "kafka": (script_path("broadcast_kafka_producer.py"), script_path("broadcast_kafka_consumer.py")),
+    "rabbitmq": (script_path("broadcast_rabbitmq_producer.py"), script_path("broadcast_rabbitmq_consumer.py")),
+    "ibmmq": (script_path("broadcast_ibmmq_producer.py"), script_path("broadcast_ibmmq_consumer.py")),
 }
 
 READY_TIMEOUT_SECONDS = 60.0
@@ -78,17 +82,33 @@ def rabbitmqctl(*args):
 
 def cleanup_orphans(technology):
     """Entfernt verwaiste Subscriptions frueherer, abgebrochener Laeufe. Sonst
-    sammeln sie weiter Kopien jeder Nachricht und verfaelschen die Last."""
+    sammeln sie weiter Kopien jeder Nachricht und verfaelschen die Last.
+    Anders als bei der geteilten DEV.QUEUE.2 (UC1/UC2/UC4/UC5) kann ein
+    Rest hier keine KUENFTIGE Messung verfaelschen (jeder Lauf legt eigene,
+    neu benannte Ressourcen an) - das Risiko ist reiner Ressourcenverbrauch
+    ueber einen langen Messtag. Deshalb hier nur eine Warnung, kein Abbruch."""
     if technology == "rabbitmq":
+        remaining = []
         for line in rabbitmqctl("list_queues", "name").splitlines():
             name = line.strip()
             if name.startswith("broadcast."):
                 rabbitmqctl("delete_queue", name)
                 print(f"  verwaiste Queue geloescht: {name}")
+                remaining.append(name)
+        if remaining:
+            still_there = [n for n in remaining
+                          if any(l.strip() == n for l in rabbitmqctl("list_queues", "name").splitlines())]
+            if still_there:
+                print(f"  WARNUNG: Loeschen nicht bestaetigt fuer: {still_there}")
     elif technology == "ibmmq":
-        for name in re.findall(r"SUB\((uc3-[^)]*)\)", runmqsc("DIS SUB('uc3-*')")):
+        names = re.findall(r"SUB\((uc3-[^)]*)\)", runmqsc("DIS SUB('uc3-*')"))
+        for name in names:
             runmqsc(f"DELETE SUB('{name}')")
             print(f"  verwaiste Subscription geloescht: {name}")
+        if names:
+            still_there = re.findall(r"SUB\((uc3-[^)]*)\)", runmqsc("DIS SUB('uc3-*')"))
+            if still_there:
+                print(f"  WARNUNG: Loeschen nicht bestaetigt fuer: {still_there}")
 
 
 def cleanup_run(technology, run_id, subscribers, topic):

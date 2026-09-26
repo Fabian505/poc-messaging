@@ -46,7 +46,7 @@ services:
   #  mem_limit: 512m
 
   ibmmq:
-    image: icr.io/ibm-messaging/mq:latest
+    image: icr.io/ibm-messaging/mq@sha256:2cb02e7991ac9fc44d10ba4e353abdc1402ec1667243b74a4574df5f274d7907
     container_name: ibmmq
     environment:
       LICENSE: accept
@@ -63,5 +63,6 @@ services:
       # Broker-Betrieb waehrend der Messung mitlaufen.
     volumes:
       - ./ibmmq/data:/mnt/mqm:Z
+      - ./ibmmq/config/99-poc.mqsc:/etc/mqm/99-poc.mqsc:ro,Z
     cpus: 2.0
     mem_limit: 2g
