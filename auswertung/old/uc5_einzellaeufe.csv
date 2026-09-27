@@ -1,0 +1,217 @@
+_datei,soll_last,nachrichten_pro_lauf,wiederholungen,Technologie,Szenario,Semantik,Verlust,Dupl. verarbeitet,Dupl. erkannt,Erneut zugestellt,Nie zugestellt,Consumer-Starts,Ereignisse
+uc5_bericht_1790423170.md,,200,1,kafka,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790423170.md,,200,1,kafka,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790423170.md,,200,1,kafka,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790423170.md,,200,1,kafka,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790423170.md,,200,1,kafka,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790423170.md,,200,1,kafka,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790423170.md,,200,1,kafka,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790423170.md,,200,1,kafka,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790423170.md,,200,1,kafka,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790423170.md,,200,1,kafka,broker-restart,at-most-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 4.6s"
+uc5_bericht_1790423170.md,,200,1,kafka,broker-restart,at-least-once,0,1,0,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.3s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790423170.md,,200,1,kafka,broker-restart,exactly-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 4.8s"
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-most-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 4.9s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-most-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.2s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-most-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-most-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.3s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-most-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.7s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-least-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 7.7s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-least-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-least-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 4.5s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-least-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.4s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,at-least-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.3s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,exactly-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.3s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,exactly-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 4.8s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,exactly-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,exactly-once,0,0,1,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 5.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790424487.md,,200,5,kafka,broker-restart,exactly-once,0,0,0,0,0,1,"broker-restart nach 66 Bestaetigungen, Ausfall 5.3s"
+uc5_bericht_1790424663.md,,200,1,rabbitmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424663.md,,200,1,rabbitmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424663.md,,200,1,rabbitmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790424663.md,,200,1,rabbitmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424663.md,,200,1,rabbitmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424663.md,,200,1,rabbitmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790424663.md,,200,1,rabbitmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790424663.md,,200,1,rabbitmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790424663.md,,200,1,rabbitmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790424663.md,,200,1,rabbitmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790424663.md,,200,1,rabbitmq,broker-restart,at-least-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790424663.md,,200,1,rabbitmq,broker-restart,exactly-once,0,0,1,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.2s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.2s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.2s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.2s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.2s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-least-once,0,2,0,2,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-least-once,0,1,0,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-least-once,0,1,0,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-least-once,0,1,0,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,at-least-once,0,1,0,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,exactly-once,0,0,1,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.2s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,exactly-once,0,0,1,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,exactly-once,0,0,1,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.2s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,exactly-once,0,0,1,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425540.md,,200,5,rabbitmq,broker-restart,exactly-once,0,0,1,1,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425714.md,,200,1,ibmmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425714.md,,200,1,ibmmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425714.md,,200,1,ibmmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790425714.md,,200,1,ibmmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425714.md,,200,1,ibmmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425714.md,,200,1,ibmmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790425714.md,,200,1,ibmmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425714.md,,200,1,ibmmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790425714.md,,200,1,ibmmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790425714.md,,200,1,ibmmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.5s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425714.md,,200,1,ibmmq,broker-restart,at-least-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.0s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790425714.md,,200,1,ibmmq,broker-restart,exactly-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.4s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-most-once,1,0,0,0,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,at-least-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-pre,exactly-once,0,0,0,1,0,2,Absturz seq=66 phase=pre
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-most-once,0,0,0,0,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,at-least-once,0,1,0,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,crash-post,exactly-once,0,0,1,1,0,2,Absturz seq=66 phase=post
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-most-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.2s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,at-least-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.2s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.1s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-pause,exactly-once,0,0,0,0,0,1,"broker-pause nach 66 Bestaetigungen, Ausfall 5.0s"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.5s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.6s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.5s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-most-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.1s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-least-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.5s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-least-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.4s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-least-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.4s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-least-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.4s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,at-least-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.3s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,exactly-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.3s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,exactly-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.4s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,exactly-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 4.3s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,exactly-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.2s; Consumer beendet (Exit 1), Neustart"
+uc5_bericht_1790426599.md,,200,5,ibmmq,broker-restart,exactly-once,0,0,0,0,0,2,"broker-restart nach 66 Bestaetigungen, Ausfall 3.3s; Consumer beendet (Exit 1), Neustart"

@@ -5,7 +5,12 @@ Prueft automatisiert, was bisher per Augenschein geprueft wurde: Rate nahe
 Soll-Last, Rueckstand unter Schwelle. Liest die Markdown-Tabelle, wie sie
 run_uc1_measurement.py (und baugleich uc2-4) schreibt:
 
-| Lauf | Min | Max | Mittel | Median | P95 | P99 | Stdabw | Drift | Rate (msg/s) | Rueckstand |
+| Lauf | Min | Max | Mittel | Median | P95 | P99 | Stdabw | Drift | Rate (msg/s) | Rueckstand | Sendedauer Mittel (ms) | Sendedauer Median (ms) | Sendedauer P99 (ms) |
+
+(14 Spalten seit der Sendedauer-Erweiterung vom 27.09.2026; Rate/Rueckstand
+bleiben an Position 10/11, die drei Sendedauer-Spalten sind hinten angehaengt
+und werden von diesem Skript nicht ausgewertet, nur fuer die Spaltenzahl-
+Pruefung gebraucht.)
 
 Exit 0 = ok, 1 = Schwelle verletzt (Block abbrechen), 2 = Bericht nicht
 parsebar (ebenfalls abbrechen, z.B. weil ALLE Laeufe fehlgeschlagen sind
@@ -27,7 +32,7 @@ def parse_rows(text):
         if not m:
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) != 11:
+        if len(cells) != 14:
             continue
         try:
             rate = float(cells[9])

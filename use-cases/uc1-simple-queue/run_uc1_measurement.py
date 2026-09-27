@@ -223,6 +223,21 @@ def run_single_measurement(technology, message_count):
 
     clear_queue(technology, needed=message_count + 10)  # +10 Warmup
 
+    # Timeout an die tatsaechliche Zielrate koppeln, nicht an eine feste
+    # Sekunden-pro-Nachricht-Konstante -- bei sehr niedrigen Raten (z.B.
+    # IBM MQ Dauerlauf bei 130/s ueber 1.000.000 Nachrichten) liess die alte
+    # Formel (message_count * 0.01) nur wenige Minuten Puffer ueber der
+    # tatsaechlich erwarteten Laufzeit, ein einzelner kurzer Haenger haette
+    # den ganzen Lauf abgebrochen. Grosszuegiger Faktor 3 auf die erwartete
+    # Dauer, mindestens weiterhin die alte Formel als Untergrenze.
+    target_rate = float(os.environ.get("TARGET_RATE", 500))
+    expected_duration = message_count / target_rate
+    producer_timeout = max(
+        MIN_TIMEOUT_SECONDS,
+        expected_duration * 3,
+        message_count * SECONDS_PER_MESSAGE_TIMEOUT,
+    )
+
     consumer_proc = subprocess.Popen(
         [sys.executable, "-u", config["consumer_script"]],
         env=env,
@@ -245,7 +260,6 @@ def run_single_measurement(technology, message_count):
             stderr=subprocess.STDOUT,
             text=True,
         )
-        producer_timeout = max(MIN_TIMEOUT_SECONDS, message_count * SECONDS_PER_MESSAGE_TIMEOUT)
         producer_output, _ = producer_proc.communicate(timeout=producer_timeout)
         if producer_proc.returncode != 0:
             raise RuntimeError(
@@ -253,7 +267,7 @@ def run_single_measurement(technology, message_count):
                 f"Ausgabe:\n{producer_output}"
             )
 
-        consumer_timeout = max(MIN_TIMEOUT_SECONDS, message_count * SECONDS_PER_MESSAGE_TIMEOUT) + 30
+        consumer_timeout = producer_timeout + 30
         consumer_output = drain_queue_until_eof(consumer_queue, pre_ready_lines, consumer_timeout)
         consumer_proc.wait(timeout=10)
     finally:
@@ -263,6 +277,11 @@ def run_single_measurement(technology, message_count):
                 proc.wait()
 
     rate_match = RATE_PATTERN.search(producer_output)
+    # Sendedauer-Block hat exakt dasselbe Format wie die Consumer-
+    # Zusammenfassung (beide kommen aus print_latency_summary()), deshalb
+    # dieselbe SUMMARY_PATTERN wiederverwenden, nur auf producer_output
+    # angewendet statt auf consumer_output.
+    send_match = SUMMARY_PATTERN.search(producer_output)
     match = SUMMARY_PATTERN.search(consumer_output)
     if not match:
         print(f"WARNUNG: Zusammenfassung nicht erkannt, Rohausgabe:\n{consumer_output}")
@@ -280,6 +299,9 @@ def run_single_measurement(technology, message_count):
         "drift": float(match.group("drift")) if match.group("drift") else None,
         "rate": float(rate_match.group("rate")) if rate_match else None,
         "behind": int(rate_match.group("behind")) if rate_match else None,
+        "send_mean": float(send_match.group("mean")) if send_match else None,
+        "send_median": float(send_match.group("median")) if send_match else None,
+        "send_p99": float(send_match.group("p99")) if send_match else None,
     }
 
 
@@ -301,7 +323,8 @@ def run_technology(technology, message_count, repetitions):
             continue
         print(f"[{technology}] Lauf {i}: Mittel={result['mean']:.2f} ms, "
               f"P99={result['p99']:.2f} ms, Rate={result['rate']} msg/s, "
-              f"Rueckstand={result['behind']}")
+              f"Rueckstand={result['behind']}, "
+              f"Sendedauer Mittel={result['send_mean']}")
         results.append(result)
     return results
 
@@ -323,15 +346,19 @@ def write_report(all_results, message_count, repetitions):
                 f.write("Keine erfolgreichen Laeufe.\n\n")
                 continue
 
-            f.write("| Lauf | Min (ms) | Max (ms) | Mittel (ms) | Median (ms) | P95 (ms) | P99 (ms) | Stdabw (ms) | Drift (ms) | Rate (msg/s) | Rueckstand |\n")
-            f.write("|---|---|---|---|---|---|---|---|---|---|---|\n")
+            f.write("| Lauf | Min (ms) | Max (ms) | Mittel (ms) | Median (ms) | P95 (ms) | P99 (ms) | Stdabw (ms) | Drift (ms) | Rate (msg/s) | Rueckstand | Sendedauer Mittel (ms) | Sendedauer Median (ms) | Sendedauer P99 (ms) |\n")
+            f.write("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n")
             for i, r in enumerate(results, start=1):
                 stdabw = f"{r['stdabw']:.2f}" if r["stdabw"] is not None else "-"
                 rate = f"{r['rate']:.1f}" if r["rate"] is not None else "-"
                 drift = f"{r['drift']:.2f}" if r.get("drift") is not None else "-"
                 behind = str(r["behind"]) if r["behind"] is not None else "-"
+                send_mean = f"{r['send_mean']:.2f}" if r.get("send_mean") is not None else "-"
+                send_median = f"{r['send_median']:.2f}" if r.get("send_median") is not None else "-"
+                send_p99 = f"{r['send_p99']:.2f}" if r.get("send_p99") is not None else "-"
                 f.write(f"| {i} | {r['min']:.2f} | {r['max']:.2f} | {r['mean']:.2f} | "
-                        f"{r['median']:.2f} | {r['p95']:.2f} | {r['p99']:.2f} | {stdabw} | {drift} | {rate} | {behind} |\n")
+                        f"{r['median']:.2f} | {r['p95']:.2f} | {r['p99']:.2f} | {stdabw} | {drift} | {rate} | {behind} | "
+                        f"{send_mean} | {send_median} | {send_p99} |\n")
 
             mean_of_means = sum(r["mean"] for r in results) / len(results)
             f.write(f"\n**Mittelwert über alle {len(results)} Läufe: {mean_of_means:.2f} ms**\n\n")

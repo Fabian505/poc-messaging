@@ -27,6 +27,8 @@ from datetime import datetime, timezone
 
 import pymqi
 
+from latency_stats import print_latency_summary
+
 QUEUE_MANAGER = "QM1"
 CHANNEL = "DEV.APP.SVRCONN"
 HOST = "localhost"
@@ -53,6 +55,7 @@ def main():
           f"(Persistenz: {'ja' if PERSISTENT else 'NEIN, nur Diagnose'})")
 
     behind_count = 0
+    send_durations = []  # Sekunden, nur gemessene Nachrichten (ohne Warmup)
     t_start = time.perf_counter()
     next_send = t_start
     for seq in range(1, TOTAL_COUNT + 1):
@@ -62,7 +65,11 @@ def main():
             "seq": seq,
             "sent_at": datetime.now(timezone.utc).isoformat(),
         }
+        t_send_start = time.perf_counter()
         queue.put(json.dumps(payload).encode(), md)
+        t_send_end = time.perf_counter()
+        if seq > WARMUP_COUNT:
+            send_durations.append(t_send_end - t_send_start)
 
         next_send += INTERVAL_SECONDS
         delay = next_send - time.perf_counter()
@@ -81,6 +88,7 @@ def main():
           f"getaktet mit {INTERVAL_SECONDS * 1000:.1f} ms Intervall.")
     print(f"Tatsaechliche Rate: {TOTAL_COUNT / elapsed:.1f} Nachrichten/s "
           f"(Soll: {1 / INTERVAL_SECONDS:.0f}), Intervalle im Rueckstand: {behind_count}")
+    print_latency_summary(send_durations, "IBM MQ Sendedauer (put)")
     print(f"End: {datetime.now(timezone.utc).isoformat()}")
 
 

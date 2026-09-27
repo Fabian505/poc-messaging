@@ -119,15 +119,20 @@ def queue_depth(technology, topic):
     if technology == "kafka":
         return kafka_topic_depth(topic)
     if technology == "rabbitmq":
-        out = subprocess.run(
+        result = subprocess.run(
             ["podman", "exec", "rabbitmq", "rabbitmqctl", "list_queues", "name", "messages"],
             capture_output=True, text=True,
-        ).stdout
-        for line in out.splitlines():
+        )
+        if result.returncode != 0:
+            # echter Fehler (Container weg, rabbitmqctl abgestuerzt) -- hier
+            # weiterhin None, damit wait_for_depth() das von einer schlicht
+            # noch nicht angelegten Queue unterscheiden kann
+            return None
+        for line in result.stdout.splitlines():
             parts = line.split()
             if len(parts) == 2 and parts[0] == "loadbalance.test":
                 return int(parts[1])
-        return None
+        return 0  # Queue existiert (noch) nicht -> leer, konsistent mit UC1s verified_depth()
     if technology == "ibmmq":
         out = subprocess.run(
             ["podman", "exec", "ibmmq", "bash", "-c",

@@ -1,0 +1,22 @@
+{"ts": 1790519943.0155675, "pid": 28280, "cmd": "bash ../../run_isolated.sh ibmmq bash -c python run_uc1_meas", "cpu_percent": 0.0, "rss": 4026368}
+{"ts": 1790519943.0157354, "pid": 28535, "cmd": "/bin/bash ../../tools/monitor_resources.sh uc1_cap_ibmmq nvm", "cpu_percent": 0.0, "rss": 3915776}
+{"ts": 1790519943.015823, "pid": 28540, "cmd": "/bin/bash ../../tools/monitor_resources.sh uc1_cap_ibmmq nvm", "cpu_percent": 0.0, "rss": 2064384}
+{"ts": 1790519943.0158894, "pid": 28543, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 12967936}
+{"ts": 1790519944.0260878, "pid": 28280, "cmd": "bash ../../run_isolated.sh ibmmq bash -c python run_uc1_meas", "cpu_percent": 0.0, "rss": 4026368}
+{"ts": 1790519944.026209, "pid": 28535, "cmd": "/bin/bash ../../tools/monitor_resources.sh uc1_cap_ibmmq nvm", "cpu_percent": 0.0, "rss": 3915776}
+{"ts": 1790519944.026268, "pid": 28540, "cmd": "/bin/bash ../../tools/monitor_resources.sh uc1_cap_ibmmq nvm", "cpu_percent": 0.0, "rss": 2064384}
+{"ts": 1790519944.0263195, "pid": 28543, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13406208}
+{"ts": 1790519944.0263734, "pid": 28708, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25288704}
+{"ts": 1790519944.0264459, "pid": 28719, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 24375296}
+{"ts": 1790519945.0354166, "pid": 28280, "cmd": "bash ../../run_isolated.sh ibmmq bash -c python run_uc1_meas", "cpu_percent": 0.0, "rss": 4026368}
+{"ts": 1790519945.0355315, "pid": 28535, "cmd": "/bin/bash ../../tools/monitor_resources.sh uc1_cap_ibmmq nvm", "cpu_percent": 0.0, "rss": 3915776}
+{"ts": 1790519945.0355892, "pid": 28540, "cmd": "/bin/bash ../../tools/monitor_resources.sh uc1_cap_ibmmq nvm", "cpu_percent": 0.0, "rss": 2064384}
+{"ts": 1790519945.03564, "pid": 28543, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13406208}
+{"ts": 1790519945.0356758, "pid": 28708, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25292800}
+{"ts": 1790519945.035728, "pid": 28719, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 24379392}
+{"ts": 1790519946.0444498, "pid": 28280, "cmd": "bash ../../run_isolated.sh ibmmq bash -c python run_uc1_meas", "cpu_percent": 0.0, "rss": 4026368}
+{"ts": 1790519946.0445616, "pid": 28535, "cmd": "/bin/bash ../../tools/monitor_resources.sh uc1_cap_ibmmq nvm", "cpu_percent": 0.0, "rss": 3915776}
+{"ts": 1790519946.044618, "pid": 28540, "cmd": "/bin/bash ../../tools/monitor_resources.sh uc1_cap_ibmmq nvm", "cpu_percent": 0.0, "rss": 2064384}
+{"ts": 1790519946.0446732, "pid": 28543, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13406208}
+{"ts": 1790519946.0447056, "pid": 28708, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25296896}
+{"ts": 1790519946.044757, "pid": 28719, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 24379392}
