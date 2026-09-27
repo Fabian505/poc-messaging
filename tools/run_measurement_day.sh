@@ -14,7 +14,7 @@ CHECK="$BASE/tools/check_report.py"
 DEVICE="nvme0n1"
 RUN_ISOLATED="$BASE/run_isolated.sh"
 
-declare -A CAP_RATE=( [rabbitmq]=300 [ibmmq]=170 )     # NACH UC1b-Ergebnis anpassen!
+declare -A CAP_RATE=( [rabbitmq]=300 [ibmmq]=120 )     # NACH UC1b-Ergebnis anpassen!
 
 log() { echo "[$(date -Iseconds)] $*" | tee -a "$LOG"; }
 skip_block() { log "ABBRUCH BLOCK: $*  -- weiter mit naechstem Block"; }
