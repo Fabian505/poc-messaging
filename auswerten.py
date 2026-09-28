@@ -41,7 +41,37 @@ META_PATTERNS = {
     "soll_last": re.compile(r"Soll-Last:\s*([\d.]+)|Gesamtlast konstant\s*([\d.]+)\s*Nachrichten/s"),
     "nachrichten_pro_lauf": re.compile(r"Nachrichten (?:pro Lauf|gesamt pro Lauf):\s*(\d+)"),
     "wiederholungen": re.compile(r"Wiederholungen:\s*(\d+)"),
+    # Ab sofort schreibt run_uc1_measurement.py "Persistenz: ja|nein" in den
+    # Berichtskopf. Aeltere Berichte haben das nicht -> Zuordnungsdatei.
+    "persistenz": re.compile(r"Persistenz:\s*([^\n|]+)"),
 }
+
+
+def load_persistenz_map(path):
+    """CSV mit Spalten datei,persistenz. Dokumentierte Zuordnung fuer Berichte
+    ohne Persistenz-Angabe im Kopf (Beleg: Orchestrator-Log, Berichts-
+    Zeitstempel = Ende des jeweiligen Laufs)."""
+    if not path:
+        return {}
+    with open(path, newline="", encoding="utf-8") as fh:
+        return {r["datei"].strip(): r["persistenz"].strip() for r in csv.DictReader(fh)}
+
+
+def resolve_persistenz(meta_value, filename, tech, persist_map, warnings):
+    """Reihenfolge: Berichtskopf > Zuordnungsdatei > Standardregel.
+    Standardregel greift NICHT fuer die mehrdeutige Bedingung (10.000 Nachrichten
+    bei 500/s, RabbitMQ/IBM MQ), weil dort persistente und nicht-persistente
+    Laeufe mit identischen Parametern existieren."""
+    if meta_value:
+        return meta_value.strip()
+    if filename in persist_map:
+        return persist_map[filename]
+    if tech == "kafka":
+        return "kafka-standard"  # Bestaetigung ohne fsync (Page Cache), RF=1
+    if re.match(r"uc1_bericht_10000n_500r_", filename):
+        warnings.append(f"{filename} ({tech}): Persistenz nicht bestimmbar -> UNBEKANNT")
+        return "UNBEKANNT"
+    return "ja"
 
 
 def extract_meta(text):
@@ -101,6 +131,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("ordner")
     ap.add_argument("--out-dir", default="auswertung")
+    ap.add_argument("--persistenz-map", default=None,
+                    help="CSV datei,persistenz fuer UC1-Berichte ohne Persistenz-Angabe im Kopf")
     ap.add_argument("--include-warmup", action="store_true",
                     help="UC1-Aufwaermlaeufe (500n/5000n) NICHT herausfiltern")
     args = ap.parse_args()
@@ -116,6 +148,8 @@ def main():
 
     # sammel_key -> Liste von dicts
     buckets = defaultdict(list)
+    persist_map = load_persistenz_map(args.persistenz_map)
+    persist_warnings = []
 
     # Aufwaermlaeufe (nicht gewertet, aber gleiches Tabellenformat wie echte
     # Messungen) muessen ausgeschlossen werden, sonst zaehlen sie versehentlich
@@ -128,6 +162,8 @@ def main():
         uc = uc_number(f.name)
         text = f.read_text(encoding="utf-8")
         meta = extract_meta(text)
+        if uc != "uc1":
+            meta.pop("persistenz", None)  # nur fuer UC1 relevant, sonst leere Spalte
         is_uc1_warmup = uc == "uc1" and meta.get("nachrichten_pro_lauf") in WARMUP_MESSAGE_COUNTS
         # UC5-Aufwaermen laeuft mit Wiederholungen=1 ("... all all 1"), die
         # echte Messung mit 5 ("... all all 5") -- gleiches Berichtsformat,
@@ -141,7 +177,10 @@ def main():
         for h2, h3, headers, rows in tables:
             if uc == "uc1":
                 sammel_key = "uc1"
-                extra = {"technologie": h2}
+                extra = {"technologie": h2,
+                         "persistenz": resolve_persistenz(meta.get("persistenz", ""), f.name,
+                                                          h2.strip().lower(), persist_map,
+                                                          persist_warnings)}
             elif uc == "uc5":
                 # h2 selbst ist der Abschnitt (Zusammenfassung/Einzellaeufe),
                 # Technologie steckt schon als Tabellenspalte drin
@@ -177,10 +216,15 @@ def main():
 
 
     if excluded_warmup:
-        print(f"\n{len(excluded_warmup)} UC1-Aufwaermbericht(e) uebersprungen (500n/5000n, "
-              f"per Methodik nicht gewertet; --include-warmup erzwingt Einbeziehung):")
+        print(f"\n{len(excluded_warmup)} Aufwaermbericht(e) uebersprungen (UC1: 500n/5000n, "
+              f"UC5: Wiederholungen=1; --include-warmup erzwingt Einbeziehung):")
         for name in excluded_warmup:
             print(f"  {name}")
+
+    if persist_warnings:
+        print("\nWARNUNG Persistenz (Zuordnungsdatei ergaenzen oder Berichtskopf pruefen):")
+        for w_ in sorted(set(persist_warnings)):
+            print(f"  {w_}")
 
 
 if __name__ == "__main__":
