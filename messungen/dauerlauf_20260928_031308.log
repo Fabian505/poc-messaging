@@ -1,0 +1,74 @@
+[2026-09-28T03:13:08+02:00] DAUERLAUF START: kafka rabbitmq ibmmq
+[2026-09-28T03:13:16+02:00] === DAUERLAUF BLOCK START: kafka (1000000 Nachrichten x 3 bei 500/s) ===
+[2026-09-28T03:13:16+02:00] START: Aufwaermen kafka (5000 Nachrichten)
+[kafka] Lauf 1/1 mit 5000 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.13 ms, P99=0.23 ms, Rate=500.0 msg/s, Rueckstand=1, Sendedauer Mittel=0.09
+
+Bericht geschrieben: uc1_bericht_5000n_500r_1790558012.md
+[2026-09-28T03:13:32+02:00] START: Dauerlauf kafka
+[kafka] Wiederholung 1/3
+[kafka] Lauf 1/1 mit 1000000 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.08 ms, P99=0.13 ms, Rate=500.0 msg/s, Rueckstand=17, Sendedauer Mittel=0.05
+
+Bericht geschrieben: uc1_bericht_1000000n_500r_1790560019.md
+[kafka] Wiederholung 2/3
+[kafka] Lauf 1/1 mit 1000000 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.08 ms, P99=0.13 ms, Rate=500.0 msg/s, Rueckstand=24, Sendedauer Mittel=0.05
+
+Bericht geschrieben: uc1_bericht_1000000n_500r_1790562026.md
+[kafka] Wiederholung 3/3
+[kafka] Lauf 1/1 mit 1000000 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.08 ms, P99=0.13 ms, Rate=500.0 msg/s, Rueckstand=25, Sendedauer Mittel=0.05
+
+Bericht geschrieben: uc1_bericht_1000000n_500r_1790564032.md
+[2026-09-28T04:53:52+02:00] Dauerlauf kafka: alle 3 Wiederholungen durchlaufen
+OK: 1 Lauf/Laeufe geprueft, Rate und Rueckstand innerhalb der Schwellen
+[2026-09-28T04:53:52+02:00] REPORT-CHECK OK: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_500r_1790564032.md
+OK: 1 Lauf/Laeufe geprueft, Rate und Rueckstand innerhalb der Schwellen
+[2026-09-28T04:53:52+02:00] REPORT-CHECK OK: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_500r_1790562026.md
+OK: 1 Lauf/Laeufe geprueft, Rate und Rueckstand innerhalb der Schwellen
+[2026-09-28T04:53:52+02:00] REPORT-CHECK OK: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_500r_1790560019.md
+[2026-09-28T04:53:52+02:00] === DAUERLAUF BLOCK ENDE: kafka ===
+[2026-09-28T04:53:57+02:00] === DAUERLAUF BLOCK START: rabbitmq (1000000 Nachrichten x 3 bei 300/s) ===
+[2026-09-28T04:53:57+02:00] START: Aufwaermen rabbitmq (500 Nachrichten)
+[rabbitmq] Lauf 1/1 mit 500 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.12 ms, P99=0.18 ms, Rate=344.7 msg/s, Rueckstand=510, Sendedauer Mittel=2.9
+
+Bericht geschrieben: uc1_bericht_500n_500r_1790564040.md
+[2026-09-28T04:54:00+02:00] START: Dauerlauf rabbitmq
+[rabbitmq] Wiederholung 1/3
+[rabbitmq] Lauf 1/1 mit 1000000 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.13 ms, P99=0.19 ms, Rate=296.0 msg/s, Rueckstand=145286, Sendedauer Mittel=2.97
+
+Bericht geschrieben: uc1_bericht_1000000n_300r_1790567419.md
+[rabbitmq] Wiederholung 2/3
+[rabbitmq] Lauf 1/1 mit 1000000 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.13 ms, P99=0.19 ms, Rate=296.2 msg/s, Rueckstand=143159, Sendedauer Mittel=2.97
+
+Bericht geschrieben: uc1_bericht_1000000n_300r_1790570797.md
+[rabbitmq] Wiederholung 3/3
+[rabbitmq] Lauf 1/1 mit 1000000 Nachrichten ...
+[rabbitmq] Lauf 1: Mittel=0.13 ms, P99=0.20 ms, Rate=289.9 msg/s, Rueckstand=142170, Sendedauer Mittel=3.04
+
+Bericht geschrieben: uc1_bericht_1000000n_300r_1790574249.md
+[2026-09-28T07:44:09+02:00] Dauerlauf rabbitmq: alle 3 Wiederholungen durchlaufen
+FAIL: Lauf 1: Rueckstand 142170 (14.2% von 1000000)
+[2026-09-28T07:44:09+02:00] REPORT-CHECK AUFFAELLIG: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_300r_1790574249.md (Drift/Rate im Bericht selbst ansehen)
+FAIL: Lauf 1: Rueckstand 143159 (14.3% von 1000000)
+[2026-09-28T07:44:09+02:00] REPORT-CHECK AUFFAELLIG: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_300r_1790570797.md (Drift/Rate im Bericht selbst ansehen)
+FAIL: Lauf 1: Rueckstand 145286 (14.5% von 1000000)
+[2026-09-28T07:44:09+02:00] REPORT-CHECK AUFFAELLIG: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_300r_1790567419.md (Drift/Rate im Bericht selbst ansehen)
+[2026-09-28T07:44:09+02:00] === DAUERLAUF BLOCK ENDE: rabbitmq ===
+[2026-09-28T07:44:20+02:00] === DAUERLAUF BLOCK START: ibmmq (1000000 Nachrichten x 3 bei 130/s) ===
+[2026-09-28T07:44:20+02:00] START: Aufwaermen ibmmq (500 Nachrichten)
+[ibmmq] Lauf 1/1 mit 500 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=917.32 ms, P99=1374.10 ms, Rate=191.4 msg/s, Rueckstand=510, Sendedauer Mittel=5.21
+
+Bericht geschrieben: uc1_bericht_500n_500r_1790574264.md
+[2026-09-28T07:44:24+02:00] START: Dauerlauf ibmmq
+[ibmmq] Wiederholung 1/3
+[ibmmq] Lauf 1/1 mit 1000000 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=18.22 ms, P99=114.89 ms, Rate=126.3 msg/s, Rueckstand=10941, Sendedauer Mittel=4.23
+
+Bericht geschrieben: uc1_bericht_1000000n_130r_1790582182.md
+[ibmmq] Wiederholung 2/3
