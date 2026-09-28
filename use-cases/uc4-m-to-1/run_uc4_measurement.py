@@ -61,7 +61,7 @@ TECH_CONFIG = {
 
 READY_TIMEOUT_SECONDS = 60.0
 START_DELAY_SECONDS = 1.0
-MIN_TIMEOUT_SECONDS = 120
+MIN_TIMEOUT_SECONDS = 300
 RESULTS_JSONL = "results_uc4.jsonl"
 RATE_PATTERN = re.compile(
     r"Tatsaechliche Rate:\s*(?P<rate>[\d.]+) Nachrichten/s.*?Rueckstand:\s*(?P<behind>\d+)"

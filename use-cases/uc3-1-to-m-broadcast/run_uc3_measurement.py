@@ -59,7 +59,7 @@ TECH_CONFIG = {
 
 READY_TIMEOUT_SECONDS = 60.0
 SECONDS_PER_MESSAGE_TIMEOUT = 0.01
-MIN_TIMEOUT_SECONDS = 120
+MIN_TIMEOUT_SECONDS = 300
 RESULTS_JSONL = "results_uc3.jsonl"
 RATE_PATTERN = re.compile(
     r"Tatsaechliche Rate:\s*(?P<rate>[\d.]+) Nachrichten/s.*?Rueckstand:\s*(?P<behind>\d+)"
