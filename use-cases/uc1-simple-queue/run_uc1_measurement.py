@@ -88,6 +88,23 @@ RATE_PATTERN = re.compile(
 )
 
 
+def persistence_label(technology):
+    """Persistenz-Etikett fuer den Berichtskopf (wird von auswerten.py gelesen).
+    PERSISTENZ_LABEL ueberschreibt alles (z.B. 'kafka-fsync'). Sonst aus den
+    Producer-Schaltern abgeleitet (Default = persistent). ACHTUNG: das ist die
+    ANGEFORDERTE Konfiguration, kein Broker-seitiger Nachweis."""
+    override = os.environ.get("PERSISTENZ_LABEL")
+    if override:
+        return override
+    if technology == "rabbitmq":
+        var = "RABBITMQ_PERSISTENT"
+    elif technology == "ibmmq":
+        var = "MQ_PERSISTENT"
+    else:
+        return "kafka-standard"
+    return "nein" if os.environ.get(var, "1") == "0" else "ja"
+
+
 def verified_depth(technology):
     """Fragt die tatsaechliche Tiefe ab (0 bei Kafka, nicht anwendbar)."""
     if technology == "rabbitmq":
@@ -340,6 +357,10 @@ def write_report(all_results, message_count, repetitions):
         f.write(f"Erstellt: {timestamp}\n\n")
         f.write(f"Nachrichten pro Lauf: {message_count}, Wiederholungen: {repetitions}, "
                 f"Soll-Last: {target_rate:.0f} Nachrichten/s\n\n")
+        # Persistenz nur bei Einzeltechnologie eindeutig (Orchestrator ruft
+        # immer einzeln auf); bei "all" entfaellt die Zeile.
+        if len(all_results) == 1:
+            f.write(f"Persistenz: {persistence_label(next(iter(all_results)))}\n\n")
 
         for technology, results in all_results.items():
             f.write(f"## {technology}\n\n")

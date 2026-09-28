@@ -10,7 +10,10 @@ LABEL="$1"; DEVICE="$2"; shift 2
 if [ "$1" != "--" ]; then echo "Usage: monitor_resources.sh <label> <device> -- <cmd...>"; exit 2; fi
 shift
 
-OUTDIR="messungen/resources"
+# Absoluter Pfad relativ zum Repo (Skript liegt in tools/), damit die Dateien
+# unabhaengig vom Arbeitsverzeichnis des Aufrufers am selben Ort landen
+# (bisher: relativ -> bei Aufruf aus use-cases/uc1-simple-queue/ dort abgelegt).
+OUTDIR="${RESOURCES_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/messungen/resources}"
 mkdir -p "$OUTDIR"
 TS=$(date +%Y%m%d_%H%M%S)
 IOSTAT_LOG="$OUTDIR/${LABEL}_iostat_${TS}.log"
@@ -22,9 +25,14 @@ iostat -x 1 "$DEVICE" > "$IOSTAT_LOG" &
 IOSTAT_PID=$!
 
 # 2) podman stats, 1s-Intervall, JSON pro Zeile
+# podman stats --format json liefert ein mehrzeiliges Array; tr entfernt die
+# Zeilenumbrueche, damit pro Sekunde genau EINE JSON-Zeile entsteht.
 ( while true; do
-    podman stats --no-stream --format json kafka rabbitmq ibmmq 2>/dev/null \
-      | sed "s/^/{\"ts\":\"$(date -Iseconds)\",\"stats\":/;s/\$/}/" >> "$POD_LOG"
+    { podman stats --no-stream --format json kafka rabbitmq ibmmq 2>/dev/null \
+        | tr -d '\n' \
+        | sed "s/^/{\"ts\":\"$(date -Iseconds)\",\"stats\":/;s/\$/}/"
+      echo
+    } >> "$POD_LOG"
     sleep 1
   done ) &
 POD_PID=$!
