@@ -1,0 +1,17 @@
+## Topic latency.test (describe)
+Topic: latency.test	TopicId: 55GwJ9I0T-GCFuuRHk98_g	PartitionCount: 1	ReplicationFactor: 1	Configs: 
+	Topic: latency.test	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+
+## Topic-Konfiguration
+Dynamic configs for topic latency.test are:
+
+## Broker 1 (relevante Werte)
+  default.replication.factor=1 sensitive=false synonyms={DEFAULT_CONFIG:default.replication.factor=1}
+  log.flush.interval.messages=9223372036854775807 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.interval.messages=9223372036854775807}
+  log.flush.interval.ms=null sensitive=false synonyms={}
+  log.flush.offset.checkpoint.interval.ms=60000 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.offset.checkpoint.interval.ms=60000}
+  log.flush.scheduler.interval.ms=9223372036854775807 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.scheduler.interval.ms=9223372036854775807}
+  log.flush.start.offset.checkpoint.interval.ms=60000 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.start.offset.checkpoint.interval.ms=60000}
+  log.retention.hours=168 sensitive=false synonyms={DEFAULT_CONFIG:log.retention.hours=168}
+  min.insync.replicas=1 sensitive=false synonyms={DEFAULT_CONFIG:min.insync.replicas=1}
+  offsets.topic.replication.factor=1 sensitive=false synonyms={STATIC_BROKER_CONFIG:offsets.topic.replication.factor=1, DEFAULT_CONFIG:offsets.topic.replication.factor=3}

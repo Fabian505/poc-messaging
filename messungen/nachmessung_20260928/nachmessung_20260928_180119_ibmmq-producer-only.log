@@ -1,0 +1,39 @@
+[2026-09-28T18:01:19+02:00] === NACHMESSUNG ibmmq-producer-only START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T18:01:19+02:00] START: Aufwaermen IBM MQ (500)
+[ibmmq] Lauf 1/1 mit 500 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=855.79 ms, P99=1242.36 ms, Rate=196.4 msg/s, Rueckstand=510, Sendedauer Mittel=5.08
+
+Bericht geschrieben: uc1_bericht_500n_500r_1790611283.md
+[2026-09-28T18:01:23+02:00] OK: Aufwaermen IBM MQ (500)
+[2026-09-28T18:01:23+02:00] AMQ6729W-Warnungen vorher: 38
+[2026-09-28T18:01:23+02:00] START: Producer-only IBM MQ 3 x 10000 (ohne Consumer)
+== Producer-only Lauf 1 ==
+== Producer-only Lauf 2 ==
+== Producer-only Lauf 3 ==
+[2026-09-28T18:03:40+02:00] OK: Producer-only IBM MQ 3 x 10000 (ohne Consumer)
+[2026-09-28T18:03:40+02:00] AMQ6729W-Warnungen nachher: 38
+[2026-09-28T18:03:40+02:00] Ergebnis (Rate und Sendedauer je Lauf):
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf1.txt:Tatsaechliche Rate: 250.1 Nachrichten/s (Soll: 500), Intervalle im Rueckstand: 10010
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf1.txt:Mittel: 3.99 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf1.txt:Median: 3.00 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf1.txt:P99:    9.47 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf2.txt:Tatsaechliche Rate: 248.7 Nachrichten/s (Soll: 500), Intervalle im Rueckstand: 10010
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf2.txt:Mittel: 4.01 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf2.txt:Median: 3.04 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf2.txt:P99:    9.49 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf3.txt:Tatsaechliche Rate: 249.2 Nachrichten/s (Soll: 500), Intervalle im Rueckstand: 10010
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf3.txt:Mittel: 4.00 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf3.txt:Median: 3.03 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf3.txt:P99:    9.49 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/uc1.csv: 27 Zeilen
+
+WARNUNG moegliche Doppelzaehlung (gleiche Bedingung aus mehreren Berichten):
+  ('kafka', '200', '2000', 'kafka-fsync-kurztest'): 2 Berichte
+  ('kafka', '500', '10000', 'kafka-fsync'): 2 Berichte
+
+3 Aufwaermbericht(e) uebersprungen (UC1: 500n/5000n, UC5: Wiederholungen=1; --include-warmup erzwingt Einbeziehung):
+  uc1_bericht_5000n_500r_1790609399.md
+  uc1_bericht_5000n_500r_1790609807.md
+  uc1_bericht_500n_500r_1790611283.md
+[2026-09-28T18:03:40+02:00] Auswertung: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/
+[2026-09-28T18:03:40+02:00] === NACHMESSUNG ibmmq-producer-only ENDE (Exit 0), Ergebnisse: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928 ===

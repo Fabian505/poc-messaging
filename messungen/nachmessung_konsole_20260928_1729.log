@@ -1,0 +1,18 @@
+##### BLOCK kafka-fsync START 2026-09-28T17:29:32+02:00
+Isoliere kafka: stoppe rabbitmq ibmmq ...
+Warte auf kafka ...
+  kafka antwortet (0s).
+  kurze Anlaufzeit fuer Kafka: 5s (JIT-Aufwaermung erfolgt ueber Durchsatz, siehe Aufwaermlauf) ...
+  kafka bereit (0s + ggf. Stabilisierung).
+Fuehre aus: ./tools/run_nachmessung.sh kafka-fsync
+
+[2026-09-28T17:29:40+02:00] === NACHMESSUNG kafka-fsync START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T17:29:43+02:00] Kafka-Konfiguration gesichert: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/kafka_konfiguration_172940.txt
+[2026-09-28T17:29:43+02:00] START: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[2026-09-28T17:29:59+02:00] OK: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[2026-09-28T17:29:59+02:00] START: flush.messages=1 setzen
+[2026-09-28T17:30:00+02:00] OK: flush.messages=1 setzen
+[2026-09-28T17:30:00+02:00] START: flush.messages=1 verifizieren (--describe)
+[2026-09-28T17:30:01+02:00] OK: flush.messages=1 verifizieren (--describe)
+[2026-09-28T17:30:18+02:00] Kurztest: Sendedauer Mittel = 3.21 ms (mit fsync erwartet ca. 3 ms, ohne ca. 0,05 ms)
+[2026-09-28T17:30:18+02:00] START: UC1 Kafka fsync Referenz 500/s (10000 x 5)

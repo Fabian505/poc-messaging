@@ -1,0 +1,15 @@
+[2026-09-28T17:35:42+02:00] === NACHMESSUNG kafka-fsync START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T17:35:42+02:00] START: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[2026-09-28T17:35:42+02:00] DRY: timeout 10800 env PERSISTENZ_LABEL=kafka-warmup python run_uc1_measurement.py kafka 5000 1
+[2026-09-28T17:35:42+02:00] START: flush.messages=1 setzen
+[2026-09-28T17:35:42+02:00] DRY: kafka_flush_set
+[2026-09-28T17:35:42+02:00] START: flush.messages=1 verifizieren (--describe)
+[2026-09-28T17:35:42+02:00] DRY: kafka_flush_verify
+[2026-09-28T17:35:42+02:00] START: UC1 Kafka fsync Referenz 500/s (10000 x 5)
+[2026-09-28T17:35:42+02:00] DRY: /home/fabianhamacher/Desktop/poc-messaging/tools/monitor_resources.sh uc1_ref_kafka_fsync nvme0n1 -- timeout 10800 env PERSISTENZ_LABEL=kafka-fsync python run_uc1_measurement.py kafka 10000 5
+[2026-09-28T17:35:42+02:00] START: UC1b Kafka fsync Stufen 200-400 (20000 x 3)
+[2026-09-28T17:35:42+02:00] DRY: /home/fabianhamacher/Desktop/poc-messaging/tools/monitor_resources.sh uc1b_kafka_fsync nvme0n1 -- env PERSISTENZ_LABEL=kafka-fsync bash -c for r in 200 250 300 350 400; do TARGET_RATE=$r python run_uc1_measurement.py kafka 20000 3 || exit 1; done
+[2026-09-28T17:35:42+02:00] START: flush.messages zuruecksetzen
+[2026-09-28T17:35:42+02:00] DRY: kafka_flush_reset
+[2026-09-28T17:35:42+02:00] DRY: python3 /home/fabianhamacher/Desktop/poc-messaging/tools/auswerten.py /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928 --out-dir /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung
+[2026-09-28T17:35:42+02:00] === NACHMESSUNG kafka-fsync ENDE (Exit 0), Ergebnisse: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928 ===

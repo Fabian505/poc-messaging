@@ -1,0 +1,2 @@
+Start: 5000 Nachrichten, Fenstergroesse 50, fsync je Produce-Request: ja (flush.messages=1)
+Fertig in 0.64s -> 7819.6 Nachrichten/s (Zustellfehler: 0; Vergleich: WINDOW=1 im selben Skript)

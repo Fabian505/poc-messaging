@@ -1,0 +1,14 @@
+Start: 2026-09-28T16:01:24.291617+00:00 (Persistenz: ja)
+Fertig: 10010 Nachrichten gesendet (10 Warmup, 10000 gemessen), getaktet mit 2.0 ms Intervall.
+Tatsaechliche Rate: 250.1 Nachrichten/s (Soll: 500), Intervalle im Rueckstand: 10010
+--- Latenz-Zusammenfassung: IBM MQ Sendedauer (put) ---
+Anzahl Messwerte: 10000
+Min:    2.67 ms
+Max:    45.22 ms
+Mittel: 3.99 ms
+Median: 3.00 ms
+P95:    9.01 ms
+P99:    9.47 ms
+Stdabw: 2.16 ms
+Drift:  -0.01 ms
+End: 2026-09-28T16:02:04.319609+00:00

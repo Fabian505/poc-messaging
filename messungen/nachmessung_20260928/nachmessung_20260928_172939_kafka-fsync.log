@@ -1,0 +1,35 @@
+[2026-09-28T17:29:40+02:00] === NACHMESSUNG kafka-fsync START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T17:29:43+02:00] Kafka-Konfiguration gesichert: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/kafka_konfiguration_172940.txt
+[2026-09-28T17:29:43+02:00] START: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[kafka] Lauf 1/1 mit 5000 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.11 ms, P99=0.18 ms, Rate=497.1 msg/s, Rueckstand=3, Sendedauer Mittel=0.08
+
+Bericht geschrieben: uc1_bericht_5000n_500r_1790609399.md
+[2026-09-28T17:29:59+02:00] OK: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[2026-09-28T17:29:59+02:00] START: flush.messages=1 setzen
+Completed updating config for topic latency.test.
+[2026-09-28T17:30:00+02:00] OK: flush.messages=1 setzen
+[2026-09-28T17:30:00+02:00] START: flush.messages=1 verifizieren (--describe)
+[2026-09-28T17:30:01+02:00] OK: flush.messages=1 verifizieren (--describe)
+[kafka] Lauf 1/1 mit 2000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.23 ms, P99=9.06 ms, Rate=194.5 msg/s, Rueckstand=100, Sendedauer Mittel=3.21
+
+Bericht geschrieben: uc1_bericht_2000n_200r_1790609418.md
+[2026-09-28T17:30:18+02:00] Kurztest: Sendedauer Mittel = 3.21 ms (mit fsync erwartet ca. 3 ms, ohne ca. 0,05 ms)
+[2026-09-28T17:30:18+02:00] START: UC1 Kafka fsync Referenz 500/s (10000 x 5)
+[kafka] Lauf 1/5 mit 10000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.23 ms, P99=9.04 ms, Rate=312.2 msg/s, Rueckstand=10010, Sendedauer Mittel=3.2
+[kafka] Lauf 2/5 mit 10000 Nachrichten ...
+[kafka] Lauf 2: Mittel=3.26 ms, P99=9.10 ms, Rate=308.7 msg/s, Rueckstand=10010, Sendedauer Mittel=3.24
+[kafka] Lauf 3/5 mit 10000 Nachrichten ...
+[kafka] Lauf 3: Mittel=3.25 ms, P99=9.16 ms, Rate=310.0 msg/s, Rueckstand=10010, Sendedauer Mittel=3.22
+[kafka] Lauf 4/5 mit 10000 Nachrichten ...
+[kafka] Lauf 4: Mittel=3.26 ms, P99=9.16 ms, Rate=309.0 msg/s, Rueckstand=10010, Sendedauer Mittel=3.23
+[kafka] Lauf 5/5 mit 10000 Nachrichten ...
+[kafka] Lauf 5: Mittel=3.29 ms, P99=9.23 ms, Rate=306.6 msg/s, Rueckstand=10010, Sendedauer Mittel=3.26
+
+Bericht geschrieben: uc1_bericht_10000n_500r_1790609610.md
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/uc1.csv: 6 Zeilen
+
+1 Aufwaermbericht(e) uebersprungen (UC1: 500n/5000n, UC5: Wiederholungen=1; --include-warmup erzwingt Einbeziehung):
+  uc1_bericht_5000n_500r_1790609399.md

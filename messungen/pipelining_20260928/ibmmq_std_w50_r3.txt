@@ -1,0 +1,2 @@
+Start: 5000 Nachrichten, Fenstergroesse 50
+Fertig in 0.85s -> 5912.4 Nachrichten/s (Vergleich: WINDOW=1 im selben Skript; reine Producer-Seite ohne Consumer, Referenz Nachmessung: ca. 249/s)

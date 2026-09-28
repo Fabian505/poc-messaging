@@ -1,0 +1,66 @@
+## Nachtrag 2026-09-28T20:29:07+02:00
+f7b68d39b2365b0ee605c7a8b4662d5f2c4791c2
+Model Number:                       CT2000P3SSD8
+Firmware Version:                   P9CR30A
+percentage_used				: 7%
+power_on_hours				: 5963
+/dev/nvme0n1p6[/home] btrfs rw,relatime,seclabel,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/home
+---------------------- kafka/data
+---------------C------ rabbitmq/data
+---------------------- ibmmq/data
+3.13.7
+Name:        IBM MQ
+Version:     10.0.0.0
+Level:       p1000-L260522
+BuildType:   IKAP - (Production)
+Platform:    IBM MQ for Linux (x86-64 platform)
+Mode:        64-bit
+O/S:         Linux 7.2.6-200.fc44.x86_64
+O/S Details: Red Hat Enterprise Linux 10.2 (Coughlan)
+3.8.0
+kafka cpus=2000000000 mem=2147483648
+rabbitmq cpus=2000000000 mem=2147483648
+ibmmq cpus=2000000000 mem=2147483648
+Log:
+   LogPrimaryFiles=3
+   LogSecondaryFiles=2
+   LogFilePages=4096
+   LogType=CIRCULAR
+   LogBufferPages=0
+   LogPath=/mnt/mqm/data/log/QM1/
+   LogWriteIntegrity=TripleWrite
+Service:
+## Topic latency.test (describe)
+Topic: latency.test	TopicId: 55GwJ9I0T-GCFuuRHk98_g	PartitionCount: 1	ReplicationFactor: 1	Configs: 
+	Topic: latency.test	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+
+## Topic-Konfiguration
+Dynamic configs for topic latency.test are:
+
+## Broker 1 (relevante Werte)
+  default.replication.factor=1 sensitive=false synonyms={DEFAULT_CONFIG:default.replication.factor=1}
+  log.flush.interval.messages=9223372036854775807 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.interval.messages=9223372036854775807}
+  log.flush.interval.ms=null sensitive=false synonyms={}
+  log.flush.offset.checkpoint.interval.ms=60000 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.offset.checkpoint.interval.ms=60000}
+  log.flush.scheduler.interval.ms=9223372036854775807 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.scheduler.interval.ms=9223372036854775807}
+  log.flush.start.offset.checkpoint.interval.ms=60000 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.start.offset.checkpoint.interval.ms=60000}
+  log.retention.hours=168 sensitive=false synonyms={DEFAULT_CONFIG:log.retention.hours=168}
+  min.insync.replicas=1 sensitive=false synonyms={DEFAULT_CONFIG:min.insync.replicas=1}
+  offsets.topic.replication.factor=1 sensitive=false synonyms={STATIC_BROKER_CONFIG:offsets.topic.replication.factor=1, DEFAULT_CONFIG:offsets.topic.replication.factor=3}
+## Topic latency.test (describe)
+Topic: latency.test	TopicId: 55GwJ9I0T-GCFuuRHk98_g	PartitionCount: 1	ReplicationFactor: 1	Configs: 
+	Topic: latency.test	Partition: 0	Leader: 1	Replicas: 1	Isr: 1	Elr: 	LastKnownElr: 
+
+## Topic-Konfiguration
+Dynamic configs for topic latency.test are:
+
+## Broker 1 (relevante Werte)
+  default.replication.factor=1 sensitive=false synonyms={DEFAULT_CONFIG:default.replication.factor=1}
+  log.flush.interval.messages=9223372036854775807 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.interval.messages=9223372036854775807}
+  log.flush.interval.ms=null sensitive=false synonyms={}
+  log.flush.offset.checkpoint.interval.ms=60000 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.offset.checkpoint.interval.ms=60000}
+  log.flush.scheduler.interval.ms=9223372036854775807 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.scheduler.interval.ms=9223372036854775807}
+  log.flush.start.offset.checkpoint.interval.ms=60000 sensitive=false synonyms={DEFAULT_CONFIG:log.flush.start.offset.checkpoint.interval.ms=60000}
+  log.retention.hours=168 sensitive=false synonyms={DEFAULT_CONFIG:log.retention.hours=168}
+  min.insync.replicas=1 sensitive=false synonyms={DEFAULT_CONFIG:min.insync.replicas=1}
+  offsets.topic.replication.factor=1 sensitive=false synonyms={STATIC_BROKER_CONFIG:offsets.topic.replication.factor=1, DEFAULT_CONFIG:offsets.topic.replication.factor=3}

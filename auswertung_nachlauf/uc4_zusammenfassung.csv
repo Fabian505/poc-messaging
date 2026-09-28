@@ -1,0 +1,2 @@
+_datei,bericht_ts,soll_last,nachrichten_pro_lauf,wiederholungen,technologie,Producer,Laeufe,Mittel (ms),Stdabw Mittel (ms),Median (ms),P99 (ms),Reihenfolge-Verletzungen gesamt,mittl. Rueckstand
+uc4_bericht_10000n_1790627337.md,1790627337,500,10000,5,ibmmq,2,5,15708.91,103.80,19478.15,20729.14,0,7693

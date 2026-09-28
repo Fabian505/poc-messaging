@@ -1,0 +1,88 @@
+[2026-09-28T17:36:27+02:00] === NACHMESSUNG kafka-fsync START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T17:36:31+02:00] Kafka-Konfiguration gesichert: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/kafka_konfiguration_173627.txt
+[2026-09-28T17:36:31+02:00] START: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[kafka] Lauf 1/1 mit 5000 Nachrichten ...
+[kafka] Lauf 1: Mittel=0.08 ms, P99=0.15 ms, Rate=500.0 msg/s, Rueckstand=2, Sendedauer Mittel=0.06
+
+Bericht geschrieben: uc1_bericht_5000n_500r_1790609807.md
+[2026-09-28T17:36:47+02:00] OK: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[2026-09-28T17:36:47+02:00] START: flush.messages=1 setzen
+Completed updating config for topic latency.test.
+[2026-09-28T17:36:48+02:00] OK: flush.messages=1 setzen
+[2026-09-28T17:36:48+02:00] START: flush.messages=1 verifizieren (--describe)
+[2026-09-28T17:36:49+02:00] OK: flush.messages=1 verifizieren (--describe)
+[kafka] Lauf 1/1 mit 2000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.25 ms, P99=9.25 ms, Rate=194.7 msg/s, Rueckstand=82, Sendedauer Mittel=3.22
+
+Bericht geschrieben: uc1_bericht_2000n_200r_1790609825.md
+[2026-09-28T17:37:05+02:00] Kurztest: Sendedauer Mittel = 3.22 ms (mit fsync erwartet ca. 3 ms, ohne ca. 0,05 ms)
+[2026-09-28T17:37:05+02:00] START: UC1 Kafka fsync Referenz 500/s (10000 x 5)
+[kafka] Lauf 1/5 mit 10000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.25 ms, P99=9.17 ms, Rate=310.1 msg/s, Rueckstand=10010, Sendedauer Mittel=3.22
+[kafka] Lauf 2/5 mit 10000 Nachrichten ...
+[kafka] Lauf 2: Mittel=3.24 ms, P99=9.10 ms, Rate=311.0 msg/s, Rueckstand=10010, Sendedauer Mittel=3.21
+[kafka] Lauf 3/5 mit 10000 Nachrichten ...
+[kafka] Lauf 3: Mittel=3.25 ms, P99=9.11 ms, Rate=309.4 msg/s, Rueckstand=10010, Sendedauer Mittel=3.23
+[kafka] Lauf 4/5 mit 10000 Nachrichten ...
+[kafka] Lauf 4: Mittel=3.22 ms, P99=9.15 ms, Rate=312.3 msg/s, Rueckstand=10010, Sendedauer Mittel=3.2
+[kafka] Lauf 5/5 mit 10000 Nachrichten ...
+[kafka] Lauf 5: Mittel=3.22 ms, P99=9.12 ms, Rate=312.7 msg/s, Rueckstand=10010, Sendedauer Mittel=3.19
+
+Bericht geschrieben: uc1_bericht_10000n_500r_1790610017.md
+[2026-09-28T17:40:17+02:00] OK: UC1 Kafka fsync Referenz 500/s (10000 x 5)
+[2026-09-28T17:40:17+02:00] START: UC1b Kafka fsync Stufen 200-400 (20000 x 3)
+[kafka] Lauf 1/3 mit 20000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.22 ms, P99=9.09 ms, Rate=194.8 msg/s, Rueckstand=780, Sendedauer Mittel=3.19
+[kafka] Lauf 2/3 mit 20000 Nachrichten ...
+[kafka] Lauf 2: Mittel=3.23 ms, P99=9.11 ms, Rate=194.8 msg/s, Rueckstand=789, Sendedauer Mittel=3.21
+[kafka] Lauf 3/3 mit 20000 Nachrichten ...
+[kafka] Lauf 3: Mittel=3.24 ms, P99=9.09 ms, Rate=194.8 msg/s, Rueckstand=793, Sendedauer Mittel=3.21
+
+Bericht geschrieben: uc1_bericht_20000n_200r_1790610343.md
+[kafka] Lauf 1/3 mit 20000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.23 ms, P99=9.11 ms, Rate=239.4 msg/s, Rueckstand=976, Sendedauer Mittel=3.2
+[kafka] Lauf 2/3 mit 20000 Nachrichten ...
+[kafka] Lauf 2: Mittel=3.23 ms, P99=9.13 ms, Rate=239.3 msg/s, Rueckstand=1068, Sendedauer Mittel=3.2
+[kafka] Lauf 3/3 mit 20000 Nachrichten ...
+[kafka] Lauf 3: Mittel=3.22 ms, P99=9.11 ms, Rate=239.6 msg/s, Rueckstand=1029, Sendedauer Mittel=3.2
+
+Bericht geschrieben: uc1_bericht_20000n_250r_1790610613.md
+[kafka] Lauf 1/3 mit 20000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.23 ms, P99=9.11 ms, Rate=278.8 msg/s, Rueckstand=3885, Sendedauer Mittel=3.2
+[kafka] Lauf 2/3 mit 20000 Nachrichten ...
+[kafka] Lauf 2: Mittel=3.23 ms, P99=9.10 ms, Rate=278.9 msg/s, Rueckstand=3874, Sendedauer Mittel=3.2
+[kafka] Lauf 3/3 mit 20000 Nachrichten ...
+[kafka] Lauf 3: Mittel=3.22 ms, P99=9.07 ms, Rate=279.1 msg/s, Rueckstand=3836, Sendedauer Mittel=3.2
+
+Bericht geschrieben: uc1_bericht_20000n_300r_1790610846.md
+[kafka] Lauf 1/3 mit 20000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.23 ms, P99=9.08 ms, Rate=306.5 msg/s, Rueckstand=10658, Sendedauer Mittel=3.21
+[kafka] Lauf 2/3 mit 20000 Nachrichten ...
+[kafka] Lauf 2: Mittel=3.22 ms, P99=9.11 ms, Rate=307.3 msg/s, Rueckstand=10368, Sendedauer Mittel=3.2
+[kafka] Lauf 3/3 mit 20000 Nachrichten ...
+[kafka] Lauf 3: Mittel=3.23 ms, P99=9.09 ms, Rate=306.7 msg/s, Rueckstand=10964, Sendedauer Mittel=3.21
+
+Bericht geschrieben: uc1_bericht_20000n_350r_1790611060.md
+[kafka] Lauf 1/3 mit 20000 Nachrichten ...
+[kafka] Lauf 1: Mittel=3.23 ms, P99=9.07 ms, Rate=312.1 msg/s, Rueckstand=20010, Sendedauer Mittel=3.2
+[kafka] Lauf 2/3 mit 20000 Nachrichten ...
+[kafka] Lauf 2: Mittel=3.21 ms, P99=9.06 ms, Rate=313.5 msg/s, Rueckstand=20010, Sendedauer Mittel=3.19
+[kafka] Lauf 3/3 mit 20000 Nachrichten ...
+[kafka] Lauf 3: Mittel=3.23 ms, P99=9.08 ms, Rate=312.2 msg/s, Rueckstand=20010, Sendedauer Mittel=3.2
+
+Bericht geschrieben: uc1_bericht_20000n_400r_1790611271.md
+[2026-09-28T18:01:11+02:00] OK: UC1b Kafka fsync Stufen 200-400 (20000 x 3)
+[2026-09-28T18:01:11+02:00] START: flush.messages zuruecksetzen
+Completed updating config for topic latency.test.
+[2026-09-28T18:01:12+02:00] OK: flush.messages zuruecksetzen
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/uc1.csv: 27 Zeilen
+
+WARNUNG moegliche Doppelzaehlung (gleiche Bedingung aus mehreren Berichten):
+  ('kafka', '200', '2000', 'kafka-fsync-kurztest'): 2 Berichte
+  ('kafka', '500', '10000', 'kafka-fsync'): 2 Berichte
+
+2 Aufwaermbericht(e) uebersprungen (UC1: 500n/5000n, UC5: Wiederholungen=1; --include-warmup erzwingt Einbeziehung):
+  uc1_bericht_5000n_500r_1790609399.md
+  uc1_bericht_5000n_500r_1790609807.md
+[2026-09-28T18:01:13+02:00] Auswertung: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/
+[2026-09-28T18:01:13+02:00] === NACHMESSUNG kafka-fsync ENDE (Exit 0), Ergebnisse: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928 ===

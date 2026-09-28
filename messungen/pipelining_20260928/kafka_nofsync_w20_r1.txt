@@ -1,0 +1,2 @@
+Start: 5000 Nachrichten, Fenstergroesse 20, fsync je Produce-Request: nein (Standard)
+Fertig in 0.02s -> 221299.0 Nachrichten/s (Zustellfehler: 0; Vergleich: WINDOW=1 im selben Skript)

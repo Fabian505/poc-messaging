@@ -1,0 +1,2 @@
+Start: 5000 Nachrichten, Fenstergroesse 50
+Fertig in 0.64s -> 7795.2 Nachrichten/s (bestaetigt 5000, nack 0; Vergleich: WINDOW=1 im selben Skript)

@@ -1,0 +1,132 @@
+##### BLOCK kafka-fsync START 2026-09-28T17:36:21+02:00
+Isoliere kafka: stoppe rabbitmq ibmmq ...
+Warte auf kafka ...
+  kafka antwortet (0s).
+  kurze Anlaufzeit fuer Kafka: 5s (JIT-Aufwaermung erfolgt ueber Durchsatz, siehe Aufwaermlauf) ...
+  kafka bereit (0s + ggf. Stabilisierung).
+Fuehre aus: ./tools/run_nachmessung.sh kafka-fsync
+
+[2026-09-28T17:36:27+02:00] === NACHMESSUNG kafka-fsync START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T17:36:31+02:00] Kafka-Konfiguration gesichert: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/kafka_konfiguration_173627.txt
+[2026-09-28T17:36:31+02:00] START: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[2026-09-28T17:36:47+02:00] OK: Aufwaermen Kafka (Standardkonfiguration, 5000)
+[2026-09-28T17:36:47+02:00] START: flush.messages=1 setzen
+[2026-09-28T17:36:48+02:00] OK: flush.messages=1 setzen
+[2026-09-28T17:36:48+02:00] START: flush.messages=1 verifizieren (--describe)
+[2026-09-28T17:36:49+02:00] OK: flush.messages=1 verifizieren (--describe)
+[2026-09-28T17:37:05+02:00] Kurztest: Sendedauer Mittel = 3.22 ms (mit fsync erwartet ca. 3 ms, ohne ca. 0,05 ms)
+[2026-09-28T17:37:05+02:00] START: UC1 Kafka fsync Referenz 500/s (10000 x 5)
+[2026-09-28T17:40:17+02:00] OK: UC1 Kafka fsync Referenz 500/s (10000 x 5)
+[2026-09-28T17:40:17+02:00] START: UC1b Kafka fsync Stufen 200-400 (20000 x 3)
+[2026-09-28T18:01:11+02:00] OK: UC1b Kafka fsync Stufen 200-400 (20000 x 3)
+[2026-09-28T18:01:11+02:00] START: flush.messages zuruecksetzen
+[2026-09-28T18:01:12+02:00] OK: flush.messages zuruecksetzen
+[2026-09-28T18:01:13+02:00] Auswertung: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/
+[2026-09-28T18:01:13+02:00] === NACHMESSUNG kafka-fsync ENDE (Exit 0), Ergebnisse: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928 ===
+
+Befehl beendet mit Exit-Code 0.
+
+Starte gestoppte Broker wieder: rabbitmq ibmmq
+Warte auf rabbitmq ...
+  rabbitmq antwortet (2s).
+  rabbitmq bereit (2s + ggf. Stabilisierung).
+Warte auf ibmmq ...
+  ibmmq antwortet (0s).
+  ibmmq bereit (0s + ggf. Stabilisierung).
+##### BLOCK kafka-fsync ENDE (Exit 0) 2026-09-28T18:01:17+02:00
+##### BLOCK ibmmq-producer-only START 2026-09-28T18:01:17+02:00
+Isoliere ibmmq: stoppe kafka rabbitmq ...
+Warte auf ibmmq ...
+  ibmmq antwortet (0s).
+  ibmmq bereit (0s + ggf. Stabilisierung).
+Fuehre aus: ./tools/run_nachmessung.sh ibmmq-producer-only
+
+[2026-09-28T18:01:19+02:00] === NACHMESSUNG ibmmq-producer-only START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T18:01:19+02:00] START: Aufwaermen IBM MQ (500)
+[2026-09-28T18:01:23+02:00] OK: Aufwaermen IBM MQ (500)
+[2026-09-28T18:01:23+02:00] AMQ6729W-Warnungen vorher: 38
+[2026-09-28T18:01:23+02:00] START: Producer-only IBM MQ 3 x 10000 (ohne Consumer)
+[2026-09-28T18:03:40+02:00] OK: Producer-only IBM MQ 3 x 10000 (ohne Consumer)
+[2026-09-28T18:03:40+02:00] AMQ6729W-Warnungen nachher: 38
+[2026-09-28T18:03:40+02:00] Ergebnis (Rate und Sendedauer je Lauf):
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf1.txt:Tatsaechliche Rate: 250.1 Nachrichten/s (Soll: 500), Intervalle im Rueckstand: 10010
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf1.txt:Mittel: 3.99 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf1.txt:Median: 3.00 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf1.txt:P99:    9.47 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf2.txt:Tatsaechliche Rate: 248.7 Nachrichten/s (Soll: 500), Intervalle im Rueckstand: 10010
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf2.txt:Mittel: 4.01 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf2.txt:Median: 3.04 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf2.txt:P99:    9.49 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf3.txt:Tatsaechliche Rate: 249.2 Nachrichten/s (Soll: 500), Intervalle im Rueckstand: 10010
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf3.txt:Mittel: 4.00 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf3.txt:Median: 3.03 ms
+/home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/ibmmq_producer_only_lauf3.txt:P99:    9.49 ms
+[2026-09-28T18:03:40+02:00] Auswertung: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/
+[2026-09-28T18:03:40+02:00] === NACHMESSUNG ibmmq-producer-only ENDE (Exit 0), Ergebnisse: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928 ===
+
+Befehl beendet mit Exit-Code 0.
+
+Starte gestoppte Broker wieder: kafka rabbitmq
+Warte auf kafka ...
+  kafka antwortet (0s).
+  kurze Anlaufzeit fuer Kafka: 5s (JIT-Aufwaermung erfolgt ueber Durchsatz, siehe Aufwaermlauf) ...
+  kafka bereit (0s + ggf. Stabilisierung).
+Warte auf rabbitmq ...
+  rabbitmq antwortet (0s).
+  rabbitmq bereit (0s + ggf. Stabilisierung).
+##### BLOCK ibmmq-producer-only ENDE (Exit 0) 2026-09-28T18:03:49+02:00
+##### BLOCK outlier-rabbitmq START 2026-09-28T18:03:49+02:00
+Isoliere rabbitmq: stoppe kafka ibmmq ...
+Warte auf rabbitmq ...
+  rabbitmq antwortet (0s).
+  rabbitmq bereit (0s + ggf. Stabilisierung).
+Fuehre aus: ./tools/run_nachmessung.sh outlier-rabbitmq
+
+[2026-09-28T18:03:51+02:00] === NACHMESSUNG outlier-rabbitmq START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T18:03:51+02:00] START: Aufwaermen rabbitmq (500)
+[2026-09-28T18:03:53+02:00] OK: Aufwaermen rabbitmq (500)
+[2026-09-28T18:03:53+02:00] START: UC1b-Vorgeschichte rabbitmq (200 250 300), 20000 x 3, mit Monitor
+[2026-09-28T18:16:27+02:00] OK: UC1b-Vorgeschichte rabbitmq (200 250 300), 20000 x 3, mit Monitor
+[2026-09-28T18:16:27+02:00] Auswertung: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/
+[2026-09-28T18:16:27+02:00] === NACHMESSUNG outlier-rabbitmq ENDE (Exit 0), Ergebnisse: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928 ===
+
+Befehl beendet mit Exit-Code 0.
+
+Starte gestoppte Broker wieder: kafka ibmmq
+Warte auf kafka ...
+  kafka antwortet (0s).
+  kurze Anlaufzeit fuer Kafka: 5s (JIT-Aufwaermung erfolgt ueber Durchsatz, siehe Aufwaermlauf) ...
+  kafka bereit (0s + ggf. Stabilisierung).
+Warte auf ibmmq ...
+  ibmmq antwortet (0s).
+  ibmmq bereit (0s + ggf. Stabilisierung).
+##### BLOCK outlier-rabbitmq ENDE (Exit 0) 2026-09-28T18:16:35+02:00
+##### BLOCK outlier-ibmmq START 2026-09-28T18:16:35+02:00
+Isoliere ibmmq: stoppe kafka rabbitmq ...
+Warte auf ibmmq ...
+  ibmmq antwortet (0s).
+  ibmmq bereit (0s + ggf. Stabilisierung).
+Fuehre aus: ./tools/run_nachmessung.sh outlier-ibmmq
+
+[2026-09-28T18:16:38+02:00] === NACHMESSUNG outlier-ibmmq START (Ziel: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928) ===
+[2026-09-28T18:16:38+02:00] START: Aufwaermen ibmmq (500)
+[2026-09-28T18:16:42+02:00] OK: Aufwaermen ibmmq (500)
+[2026-09-28T18:16:42+02:00] AMQ6729W-Warnungen vorher: 38
+[2026-09-28T18:16:42+02:00] START: UC1b-Vorgeschichte ibmmq (100 150 175), 20000 x 3, mit Monitor
+[2026-09-28T18:40:41+02:00] OK: UC1b-Vorgeschichte ibmmq (100 150 175), 20000 x 3, mit Monitor
+[2026-09-28T18:40:42+02:00] AMQ6729W-Warnungen nachher: 38
+[2026-09-28T18:40:42+02:00] Auswertung: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928/auswertung/
+[2026-09-28T18:40:42+02:00] === NACHMESSUNG outlier-ibmmq ENDE (Exit 0), Ergebnisse: /home/fabianhamacher/Desktop/poc-messaging/messungen/nachmessung_20260928 ===
+
+Befehl beendet mit Exit-Code 0.
+
+Starte gestoppte Broker wieder: kafka rabbitmq
+Warte auf kafka ...
+  kafka antwortet (0s).
+  kurze Anlaufzeit fuer Kafka: 5s (JIT-Aufwaermung erfolgt ueber Durchsatz, siehe Aufwaermlauf) ...
+  kafka bereit (0s + ggf. Stabilisierung).
+Warte auf rabbitmq ...
+  rabbitmq antwortet (0s).
+  rabbitmq bereit (0s + ggf. Stabilisierung).
+##### BLOCK outlier-ibmmq ENDE (Exit 0) 2026-09-28T18:40:51+02:00
+##### ALLE BLOECKE FERTIG 2026-09-28T18:40:51+02:00

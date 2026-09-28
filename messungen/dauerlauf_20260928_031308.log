@@ -72,3 +72,21 @@ Bericht geschrieben: uc1_bericht_500n_500r_1790574264.md
 
 Bericht geschrieben: uc1_bericht_1000000n_130r_1790582182.md
 [ibmmq] Wiederholung 2/3
+[ibmmq] Lauf 1/1 mit 1000000 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=20.36 ms, P99=180.24 ms, Rate=126.3 msg/s, Rueckstand=11330, Sendedauer Mittel=4.23
+
+Bericht geschrieben: uc1_bericht_1000000n_130r_1790590103.md
+[ibmmq] Wiederholung 3/3
+[ibmmq] Lauf 1/1 mit 1000000 Nachrichten ...
+[ibmmq] Lauf 1: Mittel=19.95 ms, P99=162.55 ms, Rate=126.0 msg/s, Rueckstand=11272, Sendedauer Mittel=4.24
+
+Bericht geschrieben: uc1_bericht_1000000n_130r_1790598041.md
+[2026-09-28T14:20:41+02:00] Dauerlauf ibmmq: alle 3 Wiederholungen durchlaufen
+OK: 1 Lauf/Laeufe geprueft, Rate und Rueckstand innerhalb der Schwellen
+[2026-09-28T14:20:41+02:00] REPORT-CHECK OK: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_130r_1790598041.md
+OK: 1 Lauf/Laeufe geprueft, Rate und Rueckstand innerhalb der Schwellen
+[2026-09-28T14:20:41+02:00] REPORT-CHECK OK: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_130r_1790590103.md
+OK: 1 Lauf/Laeufe geprueft, Rate und Rueckstand innerhalb der Schwellen
+[2026-09-28T14:20:41+02:00] REPORT-CHECK OK: /home/fabianhamacher/Desktop/poc-messaging/use-cases/uc1-simple-queue/uc1_bericht_1000000n_130r_1790582182.md
+[2026-09-28T14:20:41+02:00] === DAUERLAUF BLOCK ENDE: ibmmq ===
+[2026-09-28T14:20:50+02:00] DAUERLAUF ENDE

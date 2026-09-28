@@ -1,0 +1,6 @@
+_datei,bericht_ts,soll_last,nachrichten_pro_lauf,wiederholungen,technologie,Producer,Lauf,Vollstaendig,Fehlend,Duplikate,Reihenfolge-Verletzungen,Mittel (ms),Median (ms),P99 (ms),Max (ms),Spreizung Prod.-Mittel (ms),Gesamtrate (msg/s),Rueckstand
+uc4_bericht_10000n_1790627337.md,1790627337,500,10000,5,ibmmq,2,1,ja,0,0,0,15811.27,19631.41,20847.79,20866.29,27.17,307.1,7669
+uc4_bericht_10000n_1790627337.md,1790627337,500,10000,5,ibmmq,2,2,ja,0,0,0,15776.81,19489.93,20781.37,20827.84,96.71,306.7,7666
+uc4_bericht_10000n_1790627337.md,1790627337,500,10000,5,ibmmq,2,3,ja,0,0,0,15755.36,19598.63,20812.02,20822.44,270.35,306.5,7693
+uc4_bericht_10000n_1790627337.md,1790627337,500,10000,5,ibmmq,2,4,ja,0,0,0,15634.99,19404.41,20578.54,20597.66,370.12,304.1,7734
+uc4_bericht_10000n_1790627337.md,1790627337,500,10000,5,ibmmq,2,5,ja,0,0,0,15566.14,19266.36,20626.00,20642.17,90.07,306.2,7704
