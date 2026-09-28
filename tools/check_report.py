@@ -7,7 +7,7 @@ run_uc1_measurement.py (und baugleich uc2-4) schreibt:
 
 | Lauf | Min | Max | Mittel | Median | P95 | P99 | Stdabw | Drift | Rate (msg/s) | Rueckstand | Sendedauer Mittel (ms) | Sendedauer Median (ms) | Sendedauer P99 (ms) |
 
-(14 Spalten seit der Sendedauer-Erweiterung vom 27.09.2026; Rate/Rueckstand
+(14 Spalten seit der Sendedauer-Erweiterung vom 27.09.2026, 15 mit Sendedauer-Drift; beide werden akzeptiert; Rate/Rueckstand
 bleiben an Position 10/11, die drei Sendedauer-Spalten sind hinten angehaengt
 und werden von diesem Skript nicht ausgewertet, nur fuer die Spaltenzahl-
 Pruefung gebraucht.)
@@ -32,7 +32,7 @@ def parse_rows(text):
         if not m:
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) != 14:
+        if len(cells) < 14:
             continue
         try:
             rate = float(cells[9])

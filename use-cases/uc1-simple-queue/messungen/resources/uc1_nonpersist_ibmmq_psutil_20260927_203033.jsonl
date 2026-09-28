@@ -1,0 +1,825 @@
+{"ts": 1790533833.9507077, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533833.9509237, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533833.951134, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533833.9511876, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533833.9512587, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533833.9513266, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 12980224}
+{"ts": 1790533834.9610286, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533834.9612267, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533834.9613779, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533834.9614205, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533834.9614768, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533834.9615266, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533834.9615796, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25350144}
+{"ts": 1790533834.9616535, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25411584}
+{"ts": 1790533835.9697196, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533835.9698763, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533835.970007, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533835.970047, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533835.9700987, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533835.9701445, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533835.9701755, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25362432}
+{"ts": 1790533835.970225, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25436160}
+{"ts": 1790533836.9784126, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533836.9785728, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533836.978705, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533836.9787438, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533836.9787955, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533836.9788423, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533836.978873, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25374720}
+{"ts": 1790533836.9789228, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25452544}
+{"ts": 1790533837.9868228, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533837.9869816, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533837.987113, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533837.9871516, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533837.9872034, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533837.9872494, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533837.9872804, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25391104}
+{"ts": 1790533837.9873338, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25468928}
+{"ts": 1790533838.99512, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533838.9952726, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533838.9954069, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533838.9954453, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533838.9954972, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533838.9955432, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533838.995574, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25407488}
+{"ts": 1790533838.9956236, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25485312}
+{"ts": 1790533840.0035975, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533840.0037608, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533840.003895, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533840.0039356, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533840.0039883, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533840.0040343, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533840.0040658, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25423872}
+{"ts": 1790533840.0041177, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25497600}
+{"ts": 1790533841.0130043, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533841.01316, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533841.0132864, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533841.013331, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533841.013384, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533841.01343, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533841.0134614, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25440256}
+{"ts": 1790533841.0135107, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25513984}
+{"ts": 1790533842.021782, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533842.021938, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533842.0220666, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533842.0221057, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533842.022158, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533842.0222032, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533842.0222347, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25456640}
+{"ts": 1790533842.022285, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25530368}
+{"ts": 1790533843.0316408, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533843.0317953, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533843.0319254, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533843.0319636, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533843.032016, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533843.0320623, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533843.032094, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25473024}
+{"ts": 1790533843.0321426, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25583616}
+{"ts": 1790533844.0405395, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533844.0406957, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533844.0408254, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533844.0408645, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533844.0409157, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533844.0409622, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533844.0409944, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25489408}
+{"ts": 1790533844.0410445, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25600000}
+{"ts": 1790533845.0498316, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533845.0499983, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533845.0501354, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533845.050176, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533845.0502286, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533845.0502777, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533845.0503109, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25542656}
+{"ts": 1790533845.0503514, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25620480}
+{"ts": 1790533846.0596638, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533846.0598252, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533846.05996, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533846.06, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533846.0600526, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533846.0600996, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533846.0601323, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25563136}
+{"ts": 1790533846.0601625, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25640960}
+{"ts": 1790533847.0683448, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533847.0685031, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533847.0686388, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533847.0686781, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533847.0687304, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533847.0687757, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533847.0688076, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25583616}
+{"ts": 1790533847.0688381, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25665536}
+{"ts": 1790533848.0767782, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533848.0769336, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533848.0770607, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533848.0770998, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533848.0771508, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533848.0771978, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533848.0772295, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25612288}
+{"ts": 1790533848.0772593, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25686016}
+{"ts": 1790533849.0856912, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533849.085849, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533849.0859792, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533849.0860178, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533849.0860705, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533849.0861182, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533849.0861495, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25628672}
+{"ts": 1790533849.0861802, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25702400}
+{"ts": 1790533850.0941596, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533850.0943165, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533850.094456, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533850.0944953, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533850.0945473, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533850.0945938, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533850.094625, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25653248}
+{"ts": 1790533850.0946553, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25726976}
+{"ts": 1790533851.1025982, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533851.1027546, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533851.1028867, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533851.1029263, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533851.102978, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533851.1030242, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533851.103055, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25669632}
+{"ts": 1790533851.1030836, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25743360}
+{"ts": 1790533852.1110566, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533852.1112106, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533852.111346, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533852.1113846, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533852.1114352, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2076672}
+{"ts": 1790533852.1114817, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533852.1115131, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25690112}
+{"ts": 1790533852.1115427, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25767936}
+{"ts": 1790533853.1193433, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533853.1194997, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533853.1196327, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533853.119673, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533853.1197262, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533853.1197724, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533853.119804, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25710592}
+{"ts": 1790533853.1198356, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25784320}
+{"ts": 1790533854.1276336, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533854.127789, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533854.1279185, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533854.1279583, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533854.1280117, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533854.1280582, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13410304}
+{"ts": 1790533854.1280892, "pid": 89316, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25731072}
+{"ts": 1790533854.1281185, "pid": 89325, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25808896}
+{"ts": 1790533855.1381228, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533855.1382992, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533855.1384487, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533855.1384907, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533855.1385474, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533855.1385977, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13746176}
+{"ts": 1790533855.1387217, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25292800}
+{"ts": 1790533856.1480498, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533856.1482258, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533856.148375, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533856.1484177, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533856.1484742, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533856.1485236, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533856.148601, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25391104}
+{"ts": 1790533856.148702, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25391104}
+{"ts": 1790533857.156963, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533857.1571212, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533857.1572578, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533857.1572971, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533857.1573522, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533857.1573992, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533857.1574705, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25403392}
+{"ts": 1790533857.1575224, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25407488}
+{"ts": 1790533858.1654842, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533858.1656435, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533858.1657925, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533858.1658335, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533858.1658857, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533858.165933, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533858.1660056, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25419776}
+{"ts": 1790533858.1660562, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25423872}
+{"ts": 1790533859.1741476, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533859.174305, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533859.1744394, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533859.174478, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533859.174529, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533859.1745753, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533859.174646, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25436160}
+{"ts": 1790533859.1746964, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25440256}
+{"ts": 1790533860.1828074, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533860.1829667, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533860.1830986, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533860.1831384, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533860.1831903, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533860.183237, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533860.1833084, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25452544}
+{"ts": 1790533860.1833642, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25456640}
+{"ts": 1790533861.191507, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533861.1916642, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533861.1918137, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533861.1918545, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533861.1919124, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533861.19196, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533861.1920314, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25468928}
+{"ts": 1790533861.192082, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 4.0, "rss": 25473024}
+{"ts": 1790533862.200156, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533862.200313, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533862.200449, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533862.2004883, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533862.2005408, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533862.2005868, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533862.200659, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25485312}
+{"ts": 1790533862.20071, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25489408}
+{"ts": 1790533863.2085493, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533863.2087047, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533863.2088358, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533863.2088752, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533863.208927, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533863.2089732, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533863.2090435, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25501696}
+{"ts": 1790533863.209094, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25505792}
+{"ts": 1790533864.2174067, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533864.2175655, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533864.2176979, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533864.2177374, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533864.2177968, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533864.217845, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533864.217918, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25518080}
+{"ts": 1790533864.2179692, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 4.0, "rss": 25522176}
+{"ts": 1790533865.2257752, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533865.2259314, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533865.2260637, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533865.2261033, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533865.2261555, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533865.2262027, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533865.226273, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25571328}
+{"ts": 1790533865.2263036, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25579520}
+{"ts": 1790533866.2342017, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533866.2343612, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533866.2344928, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533866.234532, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533866.2345836, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533866.2346292, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533866.2347002, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25587712}
+{"ts": 1790533866.2347314, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25600000}
+{"ts": 1790533867.242572, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533867.2427266, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533867.2428577, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533867.2428963, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533867.242948, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533867.2429953, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533867.2430682, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25604096}
+{"ts": 1790533867.2430992, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25616384}
+{"ts": 1790533868.2510126, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533868.2511687, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533868.2513015, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533868.2513452, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533868.251398, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533868.2514443, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533868.2515173, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25624576}
+{"ts": 1790533868.2515488, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25640960}
+{"ts": 1790533869.2594419, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533869.2595963, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533869.259729, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533869.2597845, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533869.2598462, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533869.259895, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533869.2599683, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25653248}
+{"ts": 1790533869.2599993, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25661440}
+{"ts": 1790533870.2677991, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533870.2679567, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533870.268089, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533870.268128, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533870.2681801, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533870.2682276, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533870.2683003, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25669632}
+{"ts": 1790533870.2683349, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25673728}
+{"ts": 1790533871.2761714, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533871.2763278, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533871.2764633, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533871.2765026, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533871.2765546, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533871.276602, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533871.2766757, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25694208}
+{"ts": 1790533871.2767062, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25698304}
+{"ts": 1790533872.284484, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533872.2846398, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533872.2847738, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533872.2848125, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533872.284864, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533872.284911, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533872.284984, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25710592}
+{"ts": 1790533872.2850153, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25714688}
+{"ts": 1790533873.292789, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533873.292945, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533873.293075, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533873.2931142, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533873.2931662, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533873.2932127, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533873.2932842, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25735168}
+{"ts": 1790533873.293315, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25739264}
+{"ts": 1790533874.3011627, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533874.3013194, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533874.301452, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533874.301491, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533874.3015428, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533874.3015888, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533874.3016598, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25751552}
+{"ts": 1790533874.3016903, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25755648}
+{"ts": 1790533875.3095758, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533875.3097339, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533875.3098652, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533875.3099043, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533875.309957, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533875.3100042, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13750272}
+{"ts": 1790533875.310077, "pid": 89918, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25776128}
+{"ts": 1790533875.3101072, "pid": 89947, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25780224}
+{"ts": 1790533876.3206284, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533876.3208115, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533876.320963, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533876.3210068, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533876.3210678, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533876.3211224, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13754368}
+{"ts": 1790533876.321251, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25223168}
+{"ts": 1790533877.3304753, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533877.330652, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533877.3307965, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533877.3308384, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533877.3308938, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533877.3309422, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533877.3310199, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25309184}
+{"ts": 1790533877.3311195, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25391104}
+{"ts": 1790533878.3390968, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533878.339259, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533878.3393972, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533878.3394363, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533878.3394876, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533878.3395343, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533878.3396077, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25321472}
+{"ts": 1790533878.3396604, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25407488}
+{"ts": 1790533879.3476586, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533879.347819, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533879.3479545, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533879.3479943, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533879.3480468, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533879.3480937, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533879.348167, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25337856}
+{"ts": 1790533879.348219, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25423872}
+{"ts": 1790533880.356072, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533880.356229, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533880.3563638, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533880.3564034, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533880.3564565, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533880.3565025, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533880.356574, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25354240}
+{"ts": 1790533880.3566256, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25440256}
+{"ts": 1790533881.364537, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533881.3646944, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533881.3648248, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533881.364865, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533881.3649175, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533881.364964, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533881.3650358, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25370624}
+{"ts": 1790533881.365087, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25456640}
+{"ts": 1790533882.3729193, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533882.373075, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533882.3732066, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533882.3732452, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533882.373297, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533882.373353, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533882.3734279, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25387008}
+{"ts": 1790533882.37348, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25473024}
+{"ts": 1790533883.3812838, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533883.3814435, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533883.3815768, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533883.381615, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533883.3816657, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533883.381712, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533883.3817835, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25407488}
+{"ts": 1790533883.381834, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25489408}
+{"ts": 1790533884.3895931, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533884.3897464, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533884.389877, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533884.3899157, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533884.3899665, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533884.3900127, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533884.3900852, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25452544}
+{"ts": 1790533884.3901374, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25538560}
+{"ts": 1790533885.397923, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533885.3980775, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533885.398205, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533885.3982441, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533885.3982942, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533885.39835, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533885.3984256, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25473024}
+{"ts": 1790533885.3984785, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25559040}
+{"ts": 1790533886.4062738, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533886.4064338, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533886.406564, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533886.4066021, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533886.4066534, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533886.4067006, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533886.406779, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25493504}
+{"ts": 1790533886.4068103, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25579520}
+{"ts": 1790533887.414642, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533887.4147966, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533887.4149253, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533887.414964, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533887.4150147, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533887.4150612, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533887.415132, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25513984}
+{"ts": 1790533887.4151623, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25600000}
+{"ts": 1790533888.422916, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533888.4230714, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533888.4232013, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533888.4232402, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533888.4232912, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533888.4233408, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533888.4234123, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25534464}
+{"ts": 1790533888.4234426, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25624576}
+{"ts": 1790533889.4314191, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533889.4315767, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533889.4317071, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533889.4317458, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533889.431797, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533889.4318438, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533889.4319174, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25550848}
+{"ts": 1790533889.431949, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25640960}
+{"ts": 1790533890.4400282, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533890.4401822, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533890.4403107, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533890.440353, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533890.4404032, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533890.440449, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533890.4405203, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25575424}
+{"ts": 1790533890.4405508, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25661440}
+{"ts": 1790533891.4484284, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533891.4485834, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533891.4487154, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533891.4487538, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533891.448805, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533891.448851, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533891.448922, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25600000}
+{"ts": 1790533891.448952, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25686016}
+{"ts": 1790533892.4569256, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533892.457083, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533892.457215, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533892.4572537, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533892.4573052, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 1.0, "rss": 2080768}
+{"ts": 1790533892.4573557, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533892.457428, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25620480}
+{"ts": 1790533892.4574587, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25702400}
+{"ts": 1790533893.4653084, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533893.4654663, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533893.465597, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533893.4656363, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533893.465687, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533893.4657335, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533893.465805, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25640960}
+{"ts": 1790533893.4658353, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25722880}
+{"ts": 1790533894.473762, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533894.4739165, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533894.474046, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533894.474084, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533894.4741364, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533894.4741826, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533894.4742544, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25661440}
+{"ts": 1790533894.4742854, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25743360}
+{"ts": 1790533895.4823666, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533895.4825244, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533895.4826546, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533895.4826934, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533895.4827528, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533895.4828205, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533895.4829183, "pid": 90541, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25677824}
+{"ts": 1790533895.4829538, "pid": 90571, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25763840}
+{"ts": 1790533896.4914253, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533896.491588, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533896.4917235, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533896.491764, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533896.491818, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533896.4918654, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13762560}
+{"ts": 1790533897.501478, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533897.501653, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533897.5018022, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533897.5018456, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533897.5019028, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533897.5019534, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533897.5020776, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25329664}
+{"ts": 1790533897.502151, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25366528}
+{"ts": 1790533898.5100846, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533898.5102432, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533898.5103776, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533898.5104167, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533898.5104678, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533898.5105152, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533898.5105875, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25337856}
+{"ts": 1790533898.510638, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25391104}
+{"ts": 1790533899.5186074, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533899.518767, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533899.5188968, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533899.5189354, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533899.518987, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533899.5190344, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533899.5191054, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25354240}
+{"ts": 1790533899.519156, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25407488}
+{"ts": 1790533900.52698, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533900.5271351, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533900.5272648, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533900.5273035, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533900.5273597, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533900.527406, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533900.5274773, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25370624}
+{"ts": 1790533900.527528, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25423872}
+{"ts": 1790533901.53529, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533901.5354543, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533901.5355868, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533901.5356257, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533901.5356765, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533901.5357225, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533901.535794, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25387008}
+{"ts": 1790533901.5358455, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25440256}
+{"ts": 1790533902.5436287, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533902.5437868, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533902.5439174, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533902.5439568, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533902.5440083, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533902.5440545, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533902.544125, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25403392}
+{"ts": 1790533902.5441756, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25452544}
+{"ts": 1790533903.5519674, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533903.5521235, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533903.552253, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533903.5522914, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533903.5523472, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533903.5523927, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533903.5524645, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25419776}
+{"ts": 1790533903.552516, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25468928}
+{"ts": 1790533904.5603418, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533904.5604959, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533904.5606256, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533904.5606644, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533904.560715, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533904.560761, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533904.5608325, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25440256}
+{"ts": 1790533904.5608823, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25485312}
+{"ts": 1790533905.5686507, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533905.5688064, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533905.568938, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533905.5689778, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533905.569029, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533905.569077, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533905.569148, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25489408}
+{"ts": 1790533905.5691988, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25538560}
+{"ts": 1790533906.5769758, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533906.5771298, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533906.5772593, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533906.577298, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533906.577352, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533906.5773976, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533906.5774689, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25505792}
+{"ts": 1790533906.5775225, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25554944}
+{"ts": 1790533907.5853662, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533907.5855222, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533907.5856543, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533907.5856936, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533907.5857456, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533907.585793, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533907.5858648, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25526272}
+{"ts": 1790533907.585895, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25575424}
+{"ts": 1790533908.5937037, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533908.5938601, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533908.5939913, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533908.5940306, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533908.594082, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533908.594128, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533908.5941985, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25546752}
+{"ts": 1790533908.5942292, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25595904}
+{"ts": 1790533909.6024919, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533909.6026485, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533909.6027794, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533909.6028183, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533909.6028705, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533909.6029172, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533909.602989, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25567232}
+{"ts": 1790533909.60302, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25620480}
+{"ts": 1790533910.610852, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533910.6110108, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533910.6111531, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533910.6111944, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533910.611246, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533910.6112938, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533910.6113718, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25587712}
+{"ts": 1790533910.6114028, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25640960}
+{"ts": 1790533911.619204, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533911.619361, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533911.6194906, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533911.6195283, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533911.6195793, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533911.6196263, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533911.619697, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25608192}
+{"ts": 1790533911.619728, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25657344}
+{"ts": 1790533912.6275442, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533912.6276996, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533912.6278307, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533912.6278694, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533912.6279218, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533912.6279688, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533912.6280396, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25632768}
+{"ts": 1790533912.62807, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25681920}
+{"ts": 1790533913.635855, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533913.6360106, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533913.636142, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533913.6361818, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533913.6362343, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533913.636281, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533913.6363554, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25653248}
+{"ts": 1790533913.6363854, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25698304}
+{"ts": 1790533914.6442277, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533914.6443872, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533914.6445172, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533914.6445568, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533914.6446085, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533914.6446557, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533914.6447272, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25673728}
+{"ts": 1790533914.6447568, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25722880}
+{"ts": 1790533915.6526124, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533915.652767, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533915.6528997, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533915.652939, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533915.652992, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533915.6530397, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533915.6531117, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25694208}
+{"ts": 1790533915.6531427, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25739264}
+{"ts": 1790533916.6609938, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533916.661148, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533916.6612785, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533916.661317, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533916.6613724, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533916.6614196, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13770752}
+{"ts": 1790533916.661491, "pid": 91168, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25714688}
+{"ts": 1790533916.6615214, "pid": 91177, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25763840}
+{"ts": 1790533917.6712627, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533917.6714425, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533917.671586, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533917.67163, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533917.671687, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533917.6717384, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13778944}
+{"ts": 1790533917.6718597, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25243648}
+{"ts": 1790533918.6814587, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533918.6816323, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533918.6817784, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533918.6818204, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533918.6818786, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533918.6819284, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533918.682007, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25333760}
+{"ts": 1790533918.6821077, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 0.0, "rss": 25444352}
+{"ts": 1790533919.689975, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533919.690131, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533919.6902587, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533919.6902966, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533919.690352, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533919.6904013, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533919.690472, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25346048}
+{"ts": 1790533919.6905248, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25460736}
+{"ts": 1790533920.6985266, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533920.6986845, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533920.6988144, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533920.6988523, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533920.6989028, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533920.6989493, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533920.699021, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25362432}
+{"ts": 1790533920.6990724, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25477120}
+{"ts": 1790533921.707183, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533921.7073584, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533921.7074916, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533921.7075305, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533921.7075822, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533921.7076283, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533921.707699, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25378816}
+{"ts": 1790533921.7077494, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25493504}
+{"ts": 1790533922.715597, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533922.7157526, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533922.7158835, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533922.7159216, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533922.7159722, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533922.716017, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533922.7160869, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25395200}
+{"ts": 1790533922.7161376, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25509888}
+{"ts": 1790533923.7238767, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533923.7240322, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533923.7241635, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533923.7242033, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533923.724256, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533923.724302, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533923.724376, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25411584}
+{"ts": 1790533923.7244265, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25526272}
+{"ts": 1790533924.7323186, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533924.7324789, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533924.73261, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533924.7326488, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533924.7327008, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533924.7327473, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533924.7328176, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25432064}
+{"ts": 1790533924.7328684, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25542656}
+{"ts": 1790533925.7408001, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533925.740956, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533925.7410934, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533925.74114, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533925.7411966, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533925.7412443, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533925.741317, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25477120}
+{"ts": 1790533925.741377, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25559040}
+{"ts": 1790533926.7491539, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533926.7493114, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533926.7494464, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533926.7494843, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533926.7495346, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533926.7495809, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533926.7496514, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25493504}
+{"ts": 1790533926.7497025, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25575424}
+{"ts": 1790533927.7575083, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533927.7576642, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533927.757795, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533927.757833, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533927.7578838, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533927.7579303, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533927.7580006, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25513984}
+{"ts": 1790533927.758052, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25632768}
+{"ts": 1790533928.7658827, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533928.766039, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533928.766171, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533928.7662094, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533928.76626, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533928.7663062, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533928.766394, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25534464}
+{"ts": 1790533928.7664247, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25653248}
+{"ts": 1790533929.7744417, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533929.7745953, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533929.7747247, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533929.7747638, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533929.7748144, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533929.7748606, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533929.7749314, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25550848}
+{"ts": 1790533929.7749622, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25665536}
+{"ts": 1790533930.7829034, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533930.7830613, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533930.7832024, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533930.7832415, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533930.783293, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533930.783344, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533930.783416, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25571328}
+{"ts": 1790533930.7834466, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25690112}
+{"ts": 1790533931.7916806, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533931.7918372, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533931.791967, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533931.7920053, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533931.792056, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533931.7921028, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533931.7921748, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25595904}
+{"ts": 1790533931.7922053, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25710592}
+{"ts": 1790533932.8003569, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533932.800517, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533932.8006496, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533932.8006883, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533932.80074, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533932.8007872, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533932.8008595, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25612288}
+{"ts": 1790533932.8008902, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25726976}
+{"ts": 1790533933.8092678, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533933.809431, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533933.809587, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533933.8096259, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533933.8096762, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533933.809723, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533933.8097954, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25640960}
+{"ts": 1790533933.809826, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25751552}
+{"ts": 1790533934.8178856, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533934.8180408, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533934.8181708, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533934.818209, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533934.8182592, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533934.818305, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533934.8183808, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25657344}
+{"ts": 1790533934.8184116, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25767936}
+{"ts": 1790533935.8263934, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533935.8265505, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533935.826681, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533935.8267207, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533935.8267732, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533935.8268192, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533935.8268905, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25681920}
+{"ts": 1790533935.8269198, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 3.0, "rss": 25792512}
+{"ts": 1790533936.8351667, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533936.8353362, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533936.8354683, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533936.8355079, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533936.8355598, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533936.8356063, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533936.8356776, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25698304}
+{"ts": 1790533936.8357089, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25808896}
+{"ts": 1790533937.8436577, "pid": 71248, "cmd": "bash /home/fabianhamacher/Desktop/poc-messaging/run_isolated", "cpu_percent": 0.0, "rss": 4042752}
+{"ts": 1790533937.8438153, "pid": 71511, "cmd": "bash -c BASE='/home/fabianhamacher/Desktop/poc-messaging'; L", "cpu_percent": 0.0, "rss": 4190208}
+{"ts": 1790533937.8439426, "pid": 89145, "cmd": "timeout 21600 /home/fabianhamacher/Desktop/poc-messaging/too", "cpu_percent": 0.0, "rss": 2252800}
+{"ts": 1790533937.8439806, "pid": 89146, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 3940352}
+{"ts": 1790533937.8440309, "pid": 89150, "cmd": "/bin/bash /home/fabianhamacher/Desktop/poc-messaging/tools/m", "cpu_percent": 0.0, "rss": 2080768}
+{"ts": 1790533937.844077, "pid": 89154, "cmd": "python run_uc1_measurement.py ibmmq 10000 5", "cpu_percent": 0.0, "rss": 13783040}
+{"ts": 1790533937.8441477, "pid": 91770, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 2.0, "rss": 25722880}
+{"ts": 1790533937.8441782, "pid": 91801, "cmd": "/home/fabianhamacher/Desktop/poc-messaging/venv/bin/python -", "cpu_percent": 1.0, "rss": 25833472}

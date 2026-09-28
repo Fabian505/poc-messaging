@@ -8,7 +8,7 @@ set -uo pipefail
 BASE=$(pwd)
 LOG="$BASE/messungen/orchestrator_$(date +%Y%m%d_%H%M%S).log"
 mkdir -p "$BASE/messungen"
-RUN_TIMEOUT=10800   # 3 h: nur Haenger-Schutz, KEIN Limit fuer legitime Laeufe (IBM MQ UC2 dauert ~1 h)
+RUN_TIMEOUT=21600   # 3 h: nur Haenger-Schutz, KEIN Limit fuer legitime Laeufe (IBM MQ UC2 dauert ~1 h)
 MONITOR="$BASE/tools/monitor_resources.sh"
 CHECK="$BASE/tools/check_report.py"
 DEVICE="nvme0n1"

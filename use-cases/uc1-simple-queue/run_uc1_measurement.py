@@ -302,6 +302,7 @@ def run_single_measurement(technology, message_count):
         "send_mean": float(send_match.group("mean")) if send_match else None,
         "send_median": float(send_match.group("median")) if send_match else None,
         "send_p99": float(send_match.group("p99")) if send_match else None,
+        "send_drift": float(send_match.group("drift")) if send_match and send_match.group("drift") else None,
     }
 
 
@@ -346,8 +347,8 @@ def write_report(all_results, message_count, repetitions):
                 f.write("Keine erfolgreichen Laeufe.\n\n")
                 continue
 
-            f.write("| Lauf | Min (ms) | Max (ms) | Mittel (ms) | Median (ms) | P95 (ms) | P99 (ms) | Stdabw (ms) | Drift (ms) | Rate (msg/s) | Rueckstand | Sendedauer Mittel (ms) | Sendedauer Median (ms) | Sendedauer P99 (ms) |\n")
-            f.write("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n")
+            f.write("| Lauf | Min (ms) | Max (ms) | Mittel (ms) | Median (ms) | P95 (ms) | P99 (ms) | Stdabw (ms) | Drift (ms) | Rate (msg/s) | Rueckstand | Sendedauer Mittel (ms) | Sendedauer Median (ms) | Sendedauer P99 (ms) | Sendedauer Drift (ms) |\n")
+            f.write("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n")
             for i, r in enumerate(results, start=1):
                 stdabw = f"{r['stdabw']:.2f}" if r["stdabw"] is not None else "-"
                 rate = f"{r['rate']:.1f}" if r["rate"] is not None else "-"
@@ -356,9 +357,10 @@ def write_report(all_results, message_count, repetitions):
                 send_mean = f"{r['send_mean']:.2f}" if r.get("send_mean") is not None else "-"
                 send_median = f"{r['send_median']:.2f}" if r.get("send_median") is not None else "-"
                 send_p99 = f"{r['send_p99']:.2f}" if r.get("send_p99") is not None else "-"
+                send_drift = f"{r['send_drift']:.2f}" if r.get("send_drift") is not None else "-"
                 f.write(f"| {i} | {r['min']:.2f} | {r['max']:.2f} | {r['mean']:.2f} | "
                         f"{r['median']:.2f} | {r['p95']:.2f} | {r['p99']:.2f} | {stdabw} | {drift} | {rate} | {behind} | "
-                        f"{send_mean} | {send_median} | {send_p99} |\n")
+                        f"{send_mean} | {send_median} | {send_p99} | {send_drift} |\n")
 
             mean_of_means = sum(r["mean"] for r in results) / len(results)
             f.write(f"\n**Mittelwert über alle {len(results)} Läufe: {mean_of_means:.2f} ms**\n\n")
