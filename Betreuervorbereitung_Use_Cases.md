@@ -143,7 +143,7 @@ Kennzahl ist.
 
 ---
 
-## UC3 — Event-basierte Benachrichtigung (Publish/Subscribe, 1:n Broadcast)
+## UC3 — Event-basierte Benachrichtigung (Publish-Subscribe, 1:n Broadcast)
 
 **Was gemessen wird:** Ob und wie schnell JEDER von S unabhängigen
 Subscribern JEDE Nachricht erhält, bei fester Gesamtlast (500/s) und

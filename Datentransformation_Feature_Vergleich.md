@@ -44,7 +44,7 @@ Für die Bachelorarbeit lässt sich daraus ableiten: Wird in der Zielarchitektur
 ### 2.1 Grundmodell und Architektur
 
 - **Kafka**: Verteiltes, partitioniertes Commit-Log. Nachrichten werden an Topics angehängt (Append-only) und in Partitionen über Broker verteilt. Konsumenten lesen anhand eines Offsets, unabhängig von anderen Konsumenten.
-- **IBM MQ**: Klassischer Message Broker nach Point-to-Point- und Publish/Subscribe-Modell. Warteschlangen (Queues) als zentrales Konzept, Nachrichten werden nach erfolgreicher Zustellung aus der Queue entfernt.
+- **IBM MQ**: Klassischer Message Broker nach Point-to-Point- und Publish-Subscribe-Modell. Warteschlangen (Queues) als zentrales Konzept, Nachrichten werden nach erfolgreicher Zustellung aus der Queue entfernt.
 - **RabbitMQ**: Broker nach dem AMQP-Modell. Producer senden an Exchanges, die Nachrichten anhand von Routing-Regeln an gebundene Queues weiterleiten. Sehr flexibles Routing durch verschiedene Exchange-Typen.
 
 ### 2.2 Persistenz und Nachrichtenlebenszyklus
@@ -56,7 +56,7 @@ Für die Bachelorarbeit lässt sich daraus ableiten: Wird in der Zielarchitektur
 ### 2.3 Routing und Zustellmuster
 
 - **Kafka**: Routing über Topic- und Partitionswahl (durch Partitionierungsschlüssel gesteuert). Consumer Groups ermöglichen Lastverteilung (jede Partition wird nur von einem Consumer der Gruppe gelesen) sowie Fan-out (mehrere unabhängige Consumer Groups lesen dasselbe Topic vollständig).
-- **IBM MQ**: Point-to-Point über Queues, Publish/Subscribe über Topics (mit Subscriptions). Routing-Logik ist eher statisch konfiguriert.
+- **IBM MQ**: Point-to-Point über Queues, Publish-Subscribe über Topics (mit Subscriptions). Routing-Logik ist eher statisch konfiguriert.
 - **RabbitMQ**: Sehr flexibel durch vier Exchange-Typen:
   - *Direct*: exakte Routing-Key-Übereinstimmung
   - *Topic*: Muster-basiertes Routing (Wildcards)

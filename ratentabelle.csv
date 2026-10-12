@@ -1,0 +1,8 @@
+datei,rate
+uc1_ref_kafka_iostat_20260927_184708.log,500.0000
+uc1_ref_rabbitmq_iostat_20260927_192140.log,331.8000
+uc1_ref_ibmmq_iostat_20260927_201813.log,194.6000
+uc1_cap_rabbitmq_iostat_20260927_192417.log,295.0000
+uc1_cap_ibmmq_iostat_20260927_202403.log,129.7000
+uc1_nonpersist_rabbitmq_iostat_20260927_192712.log,500.0000
+uc1_nonpersist_ibmmq_iostat_20260927_203033.log,500.0000

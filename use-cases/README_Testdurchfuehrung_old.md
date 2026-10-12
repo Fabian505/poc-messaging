@@ -123,10 +123,10 @@ Leeren: `podman exec ibmmq bash -c "echo 'CLEAR QLOCAL(DEV.QUEUE.2)' | runmqsc Q
 **Besonderheiten**:
 - **Reihenfolge der Schritte ist hier strikt**: alle Consumer/Subscriber
   müssen VOR dem Producer laufen und ihre Bindung/Subscription aktiv haben.
-  Anders als bei einer Queue gibt es bei Fanout (RabbitMQ) und Pub/Sub
+  Anders als bei einer Queue gibt es bei Fanout (RabbitMQ) und Pub-Sub
   (IBM MQ) keinen Puffer, der auf einen später startenden Subscriber wartet,
   zu früh gesendete Nachrichten sind für ihn schlicht verloren.
-- **IBM MQ ist ungetestet**: die Pub/Sub-API von `pymqi` (`Subscription`,
+- **IBM MQ ist ungetestet**: die Pub-Sub-API von `pymqi` (`Subscription`,
   `MQSO_MANAGED`) konnte nicht gegen eine echte Instanz verifiziert werden.
   Erst mit `MESSAGE_COUNT = 10` und einem einzelnen Subscriber testen. Bei
   Fehlern zu einem nicht auflösbaren Topic-String oder abweichenden
